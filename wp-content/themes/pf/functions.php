@@ -203,3 +203,73 @@ function dw_asset(string $file)
 
 
 
+//IMAGES
+
+
+/**
+ * Génère une image responsive au format <picture> avec les attributs srcset et sizes.
+ *
+ * Cette fonction accepte différents formats d'entrée pour l'image (ID, tableau associatif ou URL),
+ * et retourne un bloc HTML contenant une balise <picture> incluant une balise <img>.
+ * Elle utilise les fonctions natives de WordPress pour récupérer les différentes tailles d'image
+ * et ainsi permettre au navigateur de choisir la version la plus adaptée à l'affichage.
+ *
+ * @param mixed $image    ID de l'image, tableau contenant la clé 'ID' ou URL de l'image.
+ * @param array $settings Tableau d'options complémentaires :
+ *                        - 'lazy'    => attribut loading (default: "eager").
+ *                        - 'classes' => classes CSS à ajouter à la balise <img>.
+ *
+ * @return bool|string Retourne le code HTML de l'image responsive, ou une chaîne vide si l'image est invalide.
+ */
+function responsive_image($image, $settings): bool|string
+{
+    if (empty($image)) {
+        return '';
+    }
+    $image_id = '';
+    if (is_numeric($image)) {
+        // si c'est un nombre, on considère que cela s'agit d'un ID
+        $image_id = $image;
+    } elseif (is_array($image) && isset($image['ID'])) {
+        // Si c'est un tableau associatif contenant la clé ID, on récupère cet ID
+        $image_id = $image['ID'];
+    } else {
+        // Générer un tag img par défaut
+    }
+
+// Récupération des informations de l'image depuis la base de données.
+    $alt = get_post_meta($image_id, '_wp_attachment_image_alt', true); // Attribut alt
+    $image_post = get_post($image_id); // Object WP_Post de l'image
+    $title = $image_post->post_title ?? '';
+    $name = $image_post->post_name ?? '';
+
+// Récupération des URLS et attributs pour l'image en taille "full"
+// Wordpress génère automatiquement un srcset basé sur les tailles existantes
+    $src = wp_get_attachment_image_url($image_id, 'full');
+    $srcset = wp_get_attachment_image_srcset($image_id, 'full');
+    $sizes = wp_get_attachment_image_sizes($image_id, 'full');
+
+// Gestion de l'attribut de chargement "lazy" ou "eager" selon les paramètres.
+    $lazy = $settings['lazy'] ?? 'eager';
+
+// Gestion des classes (si des classes sont fournies dans $settings).
+    $classes = '';
+    if (!empty($settings['classes'])) {
+        $classes = is_array($settings['classes']) ? implode(' ', $settings['classes']) : $settings['classes'];
+    }
+    ob_start();
+    ?>
+    <picture>
+        <!-- Ici, vous pouvez ajouter manuellement des balises <source> pour d'autres formats (WebP, AVIF, etc.)
+             si ces formats sont disponibles via un plugin ou un traitement personnalisé. -->
+        <img
+            src="<?= esc_url($src) ?>"
+            alt="<?= esc_attr($alt) ?>"
+            loading="<?= esc_attr($lazy) ?>"
+            srcset="<?= esc_attr($srcset) ?>"
+            sizes="<?= esc_attr($sizes) ?>"
+            class="<?= esc_attr($classes) ?>">
+    </picture>
+    <?php
+    return ob_get_clean();
+}

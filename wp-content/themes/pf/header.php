@@ -13,12 +13,12 @@
     <h1><?= get_bloginfo('name') ?></h1>
     <p><?= get_bloginfo('description') ?></p>
 
-    <nav class="nav">
+    <nav class="nav__header">
         <h2 class="sro">Navigation pricinpale</h2>
-        <ul class="nav__container">
+        <ul class="nav__container__header">
             <?php foreach(dw_get_navigation_links('header') as $link): ?>
-                <li class="nav__item nav__item--<?= $link->icon; ?>">
-                    <a href="<?= $link->href; ?>" class="nav__link"><?= $link->label; ?></a>
+                <li class="nav__item__header nav__item--<?= $link->icon; ?>">
+                    <a href="<?= $link->href; ?>" class="nav__link__header"><?= $link->label; ?></a>
                 </li>
             <?php endforeach; ?>
         </ul>

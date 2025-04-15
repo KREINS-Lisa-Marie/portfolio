@@ -1,3 +1,4 @@
+<?php  include ('templates/content/stage/stage.php') ?>
 <?php get_header(); ?>
 <style type="text/css">
     .sro {
@@ -135,7 +136,7 @@ endwhile; else: ?>
             'post_type' => 'project',
             'order' => 'DESC',
             'orderby' => 'date',
-            'posts_per_page' => 2,
+            'posts_per_page' => 3,
         ]);
 
         if($projects->have_posts()): while($projects->have_posts()): $projects->the_post(); ?>
@@ -146,7 +147,6 @@ endwhile; else: ?>
                 <div class="project__card">
                     <header class="project__head">
                         <h3 class="project__title"><?= get_the_title(); ?></h3>
-                        <p><time datetime="<?= date('c', $departure = get_field('departure')); ?>"><?= date_i18n('F Y', $departure); ?></time></p>
                     </header>
                     <figure class="project__fig">
                         <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'project__img']); ?>
