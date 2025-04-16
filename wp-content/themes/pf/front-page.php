@@ -113,7 +113,7 @@
         Fasciné par le web
     </h2>
     <p>
-        Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la HEPL de Seraing. Je suis très ambitieuse et j’essaie de m’ améliorer tout le temps. Je peux me passionner pour beaucoup de choses et je suis toujours prêt à découvrir quelque chose de nouveau !
+        Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> de Seraing. Je suis très ambitieuse et j’essaie de m’ améliorer tout le temps. Je peux me passionner pour beaucoup de choses et je suis toujours prêt à découvrir quelque chose de nouveau !
     </p>
 </section>
 <?php
