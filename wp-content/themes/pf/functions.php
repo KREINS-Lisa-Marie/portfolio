@@ -41,7 +41,7 @@ register_post_type('project', [
     'menu_position' => 6,
     'menu_icon' => 'dashicons-portfolio',
     'public' => true,
-    'has_archive' => true,
+    'has_archive' => false,
     'rewrite' => [
         'slug' => 'projets',// nom du slug de la page
     ],
@@ -166,6 +166,8 @@ function dw_handle_contact_form()
 
 
 
+// ???
+
 function dw_asset(string $file)
 {
     $manifestPath = get_theme_file_path('public/.vite/manifest.json');
@@ -173,12 +175,12 @@ function dw_asset(string $file)
     if (file_exists($manifestPath)) {
         $manifest = json_decode(file_get_contents($manifestPath), true);
 
-        if (isset($manifest['wp-content/themes/dw/resources/js/main.js']) && $file === 'js') {
-            return get_theme_file_uri('public/' . $manifest['wp-content/themes/dw/resources/js/main.js']['file']);
+        if (isset($manifest['wp-content/themes/pf/resources/js/main.js']) && $file === 'js') {
+            return get_theme_file_uri('public/' . $manifest['wp-content/themes/pf/resources/js/main.js']['file']);
         }
 
-        if (isset($manifest['wp-content/themes/dw/resources/css/styles.scss']) && $file === 'css') {
-            return get_theme_file_uri('public/' . $manifest['wp-content/themes/dw/resources/css/styles.scss']['file']);
+        if (isset($manifest['wp-content/themes/pf/resources/css/styles.scss']) && $file === 'css') {
+            return get_theme_file_uri('public/' . $manifest['wp-content/themes/pf/resources/css/styles.scss']['file']);
         }
     }
 }
