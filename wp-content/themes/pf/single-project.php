@@ -9,10 +9,10 @@
             margin: -1px;
             padding: 0;
             border: 0;
-        }
+        }/*
         .travel {
         }
-        .travel__header {       /*damit man titel über Bild machen kann*/
+        .travel__header {       !*damit man titel über Bild machen kann*!
             height: 400px;
             width: 100%;
             position: relative;
@@ -29,23 +29,23 @@
             height: 100%;
         }
         .travel__back {
-            z-index: 0;     /* va s'afficher derrière */
+            z-index: 0;     !* va s'afficher derrière *!
             margin: 0;
             padding: 0;
         }
-        .travel__back:before {          /* ombrage damit text noch visible der drüber kommt kann man auch mit gradient machen = komplizierter */
+        .travel__back:before {          !* ombrage damit text noch visible der drüber kommt kann man auch mit gradient machen = komplizierter *!
             content: '';
             display: block;
             background: rgb(100,20,40);
             opacity: 0.75;
         }
-        .travel__cover {         /*toute la largeur*/
+        .travel__cover {         !*toute la largeur*!
             display: block;
             width: 100%;
             height: 100%;
             object-fit: cover;
         }
-        .travel__head {     /* va s'afficher au dessus */
+        .travel__head {     !* va s'afficher au dessus *!
             z-index: 1;
             display: flex;
             flex-direction: column;
@@ -87,11 +87,11 @@
             height: 30px;
             display: block;
             position: relative;
-            background: url(/wp-content/themes/dw/resources/img/star_empty.svg);
+           !* background: url(/wp-content/themes/dw/resources/img/star_empty.svg);*!
             background-repeat: repeat-x;
             background-position: 0 0;
         }
-
+*/
 
 
         body{
@@ -141,8 +141,11 @@ if(have_posts()): while(have_posts()): the_post(); ?>
 
 
     <div class="project__header">
-        <h2 class="project__title">Le VM</h2>
-        <h3 class="project__subline">projet client</h3>
+        <h2 class="project__title"><?= get_the_title(); ?></h2>
+       <!-- <?php /*if ($project_subline = get_field('project_subline'):*/?>
+        <h3 class="project__subline"><?php /*= $project_subline; */?></h3>
+    --><?php /*endif;*/?>
+        <h3 class="project__subline"><?= $project_subline = get_field('project_subline');?></h3>
     </div>
 <div class="project__proporties">
     <div class="project__goal">
@@ -150,7 +153,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
             Objectif du projet
         </h4>
         <p class="project__proporties__text">
-            Text
+            <?= $goal = get_field('goal');?>
         </p>
     </div>
 
@@ -159,7 +162,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
             Étapes
         </h4>
         <p class="project__proporties__text">
-            Text
+            <?= $steps = get_field('steps');?>
         </p>
     </div>
 
@@ -168,9 +171,12 @@ if(have_posts()): while(have_posts()): the_post(); ?>
             Les difficultés rencontrés
         </h4>
         <p class="project__proporties__text">
-            Text
+            <?= $problems = get_field('problems');?>
         </p>
     </div>
+</div>
+<div class="project-gallery">
+    <?= $images = get_field('project_gallery');?>
 </div>
 
 <!--    <div class="travel">
