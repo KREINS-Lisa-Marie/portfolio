@@ -10,6 +10,7 @@
         padding: 0;
         border: 0;
     }
+    /*
     .trips {
         display: flex;
         justify-content: flex-start;
@@ -69,42 +70,8 @@
 
 
 
-    body{
-        margin: 0;
-        /*background-color: #D6CBE3*/;
-        font-family: "Gotham", sans-serif;
-    }
-    .header{
-        background-color: #9F90B7;
-    }
-    header nav{
-        display: flex;
+    */
 
-    }
-    a{
-        text-decoration: none;
-        color: black;
-    }
-    footer{
-        background-color: #D6CBE3;
-        font-family: "Gotham", sans-serif;
-    }
-    footer h2{
-        font-weight: 500;
-    }
-    .projects{
-        background-color: #503E65;
-    }
-    .project__card{
-        background-color: #D6CBE3;
-        justify-items: center;
-    }
-    footer ul{
-        list-style-type: none;
-    }
-    .discover-me-container{
-        background-color: #D6CBE3;
-    }
 
 </style>
 
@@ -113,10 +80,13 @@
         Fasciné par le web
     </h2>
     <p>
-        Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> de Seraing. Je suis très ambitieuse et j’essaie de m’ améliorer tout le temps. Je peux me passionner pour beaucoup de choses et je suis toujours prêt à découvrir quelque chose de nouveau !
+        Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> de Seraing. Je suis très ambitieuse et j’essaie de m’améliorer tout le temps. Je peux me passionner pour beaucoup de choses et je suis toujours prêt à découvrir quelque chose de nouveau !
     </p>
+    <a href="http://portfolio.test/a-propros/ " title="Aller vers la page 'A propos'">Me découvrir</a>
 </section>
 <?php
+
+// On ajoute les projets sur la page
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
 if(have_posts()): while(have_posts()): the_post(); ?>

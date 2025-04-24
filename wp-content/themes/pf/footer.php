@@ -1,5 +1,27 @@
 </main>
 <footer>
+
+    <style type="text/css">
+
+        footer{
+            font-size: 14px;
+        }
+        h2{
+            font-weight: 700;
+        }
+        a{
+            font-weight: 500;
+        }
+        .nav__container__footer{
+            padding-left: 0;
+            list-style-type: none;
+        }
+        .nav__container__footer a{
+            padding-top: 16px;
+        }
+
+    </style>
+
     <h2>Navigation</h2>
     <nav class="nav__footer">
         <ul class="nav__container__footer">
@@ -16,13 +38,13 @@
     </h2>
     <ul>
         <li>
-            <a href="#">Instagram</a>
+            <a href="https://www.instagram.com/lisa.marie2601/">Instagram</a>
         </li>
         <li>
-            <a href="#">Facebook</a>
+            <a href="https://www.facebook.com/lisamarie.kreins.5">Facebook</a>
         </li>
         <li>
-            <a href="#">Linkedin</a>
+            <a href="https://fr.linkedin.com/">Linkedin</a>
         </li>
     </ul>
     <a href="http://portfolio.test/contact/" title="Aller vers la page contact">
