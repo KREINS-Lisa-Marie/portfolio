@@ -9,6 +9,7 @@ class ContactForm
 
     public function __construct()
     {
+    //    $this->post_type = $post_type;
     }
 
     public function rule(string $field, string $rule): static
@@ -54,6 +55,14 @@ class ContactForm
             subject: 'Nouveau message de contact',
             message: $this->generateEmailContent($data),
         );
+
+        // Envoyer une notification à l'utilisateur
+        wp_mail(
+            to: $data['email'],
+            subject: 'Confirmation d‘envoi',
+            message: $this->generateReplyEmailContent($data),
+        );
+
 
         // Retourner à la page précédente pour afficher un message de succès.
         // Mettre un message de succès en session pour pouvoir l'afficher sur la page suivante :
@@ -117,6 +126,7 @@ class ContactForm
         return $cleaned;
     }
 
+    //Message pour l'admin avec le contenu du message envoyé par un utilisateur
     protected function generateEmailContent(array $data): string
     {
         return 'Bonjour,'.PHP_EOL
@@ -125,5 +135,15 @@ class ContactForm
             .'----'.PHP_EOL
             .'Adresse mail: '.$data['email'];
     }
+
+
+    // Message de retour à l'utilisateur
+    protected function generateReplyEmailContent(array $data): string
+    {
+        return 'Confirmation d‘envoie de votre message'.PHP_EOL
+            .'Récapitulatif de votre message :'.PHP_EOL
+            .$data['message'];
+    }
+
 
 }
