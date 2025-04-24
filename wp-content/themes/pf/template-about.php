@@ -20,67 +20,66 @@
     <h2>Mon parcours</h2>
 <ul>
     <li>
-        - 2017 CESS en langues et sciences
+        2017 CESS en langues et sciences
     </li>
     <li>
-        - 2017-2019 CESS technique en tant qu’assistante pharmaceutico-technique
+        2017-2019 CESS technique en tant qu’assistante pharmaceutico-technique
     </li>
     <li>
-        - 2019-2021 Assistante pharmaceutico-technique en Belgique
+        2019-2021 Assistante pharmaceutico-technique en Belgique
     </li>
     <li>
-        - 2021-2023 Assistante pharmaceutico-technique au Luxembourg
+        2021-2023 Assistante pharmaceutico-technique au Luxembourg
     </li>
     <li>
-        - 2023-2026 Bachelier en Technique Infographie option Web
+        2023-2026 Bachelier en Technique Infographie option Web
     </li>
 </ul>
 </section>
 
 <section class="languages-container">
-    <h2 class="sro">
+    <h2 class="sro languages-title">
         Mes langages
     </h2>
-    <ul>
-        <li>
-            <img src="" alt="">
-            <h3>
+    <ul class="languages-list" itemscope itemtype="https://schema.org/Person">
+        <li class="languages-element">
+            <a href="https://html.spec.whatwg.org/multipage/"><img src="./resources/img/html.svg" alt="image du langage HTML" width="117" height="117" class="languages-image"></a>
+            <h3 itemprop="skills">
                 HTML
             </h3>
         </li>
-        <li>
-            <img src="" alt="">
-            <h3>
+        <li class="languages-element">
+            <a href="https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/"><img src="./resources/img/css-3.svg" width="117" height="117" alt="image du langage CSS " class="languages-image"></a>
+            <h3 itemprop="skills">
                 CSS
             </h3>
         </li>
-        <li>
-            <img src="" alt="">
-            <h3>
+        <li class="languages-element">
+            <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img src="./resources/img/logo-javascript.svg" alt="image du langage de programmation JavaScript" width="117" height="117" class="languages-image"></a>
+            <h3 itemprop="skills">
                 JavaScript
             </h3>
         </li>
-        <li>
-            <img src="" alt="">
-            <h3>
+        <li class="languages-element">
+            <a href="https://www.typescriptlang.org/docs/"><img src="./resources/img/typescript.svg" alt="image du langage de programmation TypeScript" width="117" height="117" class="languages-image"></a>
+            <h3 itemprop="skills">
                 TypeScript
             </h3>
         </li>
-        <li>
-            <img src="" alt="">
-            <h3>
+        <li class="languages-element">
+            <a href="https://www.php.net/"><img src="./resources/img/OfficialPHPLogo.svg" width="117" height="117" alt="image du langage de programmation PHP" class="languages-image"></a>
+            <h3 itemprop="skills">
                 PHP
             </h3>
         </li>
-        <li>
-            <img src="" alt="">
-            <h3>
+        <li class="languages-element">
+            <a href="https://dev.mysql.com/doc/"><img src="./resources/img/mysql.svg" width="117" height="117" alt="image du langage de programmation MySQL" class="languages-image"></a>
+            <h3 itemprop="skills">
                 MySQL
             </h3>
         </li>
     </ul>
 </section>
-
 <?php
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
