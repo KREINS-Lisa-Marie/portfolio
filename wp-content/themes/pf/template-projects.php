@@ -5,8 +5,6 @@
 
 <?php get_header(); ?>
 
-
-
 <style type="text/css">
     .sro {
         position: absolute;
@@ -116,16 +114,22 @@
 </style>
 
 <h2 class="page__title"><?= get_the_title(); ?></h2>
-
-
 <?php
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
-if(have_posts()): while(have_posts()): the_post(); ?>
+$paged = get_query_var('paged') ? get_query_var('paged') : 1;
+$args = [
+    'post_type' => 'project', // ATTENTION changer
+    'posts_per_page' => 3,
+    'paged' => $paged,
+];
 
+$query = new WP_Query($args);
+if ($query->have_posts()) :
+    while ($query->have_posts()) : $query->the_post(); ?>
     <div class="project__card">
         <header class="project__head">
-            <h3 class="project__title"><?= get_the_title(); ?></h3>
+            <h3 class="project__title"><?= get_the_title() ?></h3>
         </header>
         <figure class="project__fig">
             <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'project__img']); ?>
