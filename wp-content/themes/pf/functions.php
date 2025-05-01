@@ -33,7 +33,7 @@ add_theme_support('post-thumbnails', ['project']);
 
 // Enregistrer de nouveaux "types de contenu", qui seront stockés dans la table
 // "wp_posts", avec un identifiant de type spécifique dans la colonne "post_type":
-// crée la catégorie "Projets" dans laquelle on peut faire des posts
+// crée la projectcatégorie "Projets" dans laquelle on peut faire des posts
 
 register_post_type('project', [
     'label' => 'Projets',
