@@ -1,0 +1,66 @@
+
+
+.contact {
+  background-color: var(--dark-violet);
+  border-radius: 16px;
+  padding: 64px 24px;
+  font-size: 14px;
+  background-image: image("../../img/background-rose.webp");
+
+  .form_title{
+    margin-bottom: 21px;
+    margin-left: 16px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .field__label {
+    display: block;
+    font-size: 18px;
+    margin-bottom: 16px;
+  }
+
+  h3, .field__label {
+    font-weight: 600;
+    color: var(--main-lavender);
+    margin-left: 24px;
+  }
+
+  .field__input {
+    color: var(--placeholder);
+    border: none;
+    border-radius: 8px;
+    padding: 19px 16px;
+    display: block;
+    margin-bottom: 24px;
+    min-width: calc(100% - 48px);         /*      A CORRIGER LARGEUR      */
+  }
+  #message{
+    margin-bottom: 48px;
+    border: none;
+    min-height: 200px;
+
+  }
+
+  .field__input, #message{
+    font-family: "Gotham", sans-serif;
+    font-size: 14px;
+
+  }
+
+  .btn {
+    padding: 19px;
+    background-color: var(--main-lavender);
+    color: var(--dark-violet);
+    border-radius: 8px;
+    border: none;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+    min-width: 100%;
+    font-family: "Gotham", sans-serif;
+  }
+
+}

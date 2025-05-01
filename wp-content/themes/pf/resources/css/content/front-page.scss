@@ -1,0 +1,34 @@
+/*SECTION DISCOVER ME */
+
+.discover-me-container h2{
+  color: var(--dark-violet);
+  margin-top: 88px;
+  margin-bottom: 20px;
+}
+
+.discover-me-container h2, .link_discover_me{
+  margin-left: 24px;
+}
+
+.link_discover_me{
+  display: block;
+  font-size: 20px;      /*    AJOUTER flèche -->      */
+  font-weight: 600;
+  color: var(--dark-violet);
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+
+
+/*SECTION Projets récents */
+
+
+.projects h2{
+  display: block;
+  color: var(--main-lavender);
+  font-size: 24px;
+  font-weight: 500;
+  font-family: "STIXGeneral", serif;
+padding-top: 40px;
+  text-align: center;
+}
