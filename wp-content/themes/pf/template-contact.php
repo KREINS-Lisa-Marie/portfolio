@@ -1,14 +1,16 @@
 <?php /* Template Name: Page "Contact" */ ?>
 
 <?php get_header(); ?>
-    <h2>Contactez-moi</h2>
+    <h2 class="page__title" >
+        Contactez-moi
+    </h2>
 <?php
 // On ouvre "la boucle" (The Loop), la structure de contrôle
 // de contenu propre à Wordpress:
 if(have_posts()): while(have_posts()): the_post(); ?>
 
     <section class="contact">
-        <h3>
+        <h3 class="form_title">
             Formulaire de contact
         </h3>
 <!--        <div class="contact__left"><?php /*= get_the_content(); */?></div>-->
@@ -28,28 +30,36 @@ if(have_posts()): while(have_posts()): the_post(); ?>
                     <fieldset class="form__fields">
                         <div class="field">
                             <label for="firstname" class="field__label">Prénom</label>
-                            <input type="text" name="firstname" id="firstname" class="field__input">
+                            <input type="text" name="firstname" id="firstname" class="field__input" placeholder="par exemple: Amandine">
                             <?php if(isset($errors['firstname'])): ?>
                                 <p class="field__error"><?= $errors['firstname']; ?></p>
                             <?php endif; ?>
                         </div>
                         <div class="field">
                             <label for="lastname" class="field__label">Nom</label>
-                            <input type="text" name="lastname" id="lastname" class="field__input">
+                            <input type="text" name="lastname" id="lastname" class="field__input" placeholder="par exemple: Briol">
                             <?php if(isset($errors['lastname'])): ?>
                                 <p class="field__error"><?= $errors['lastname']; ?></p>
                             <?php endif; ?>
                         </div>
                         <div class="field">
                             <label for="email" class="field__label">Adresse mail</label>
-                            <input type="email" name="email" id="email" class="field__input">
+                            <input type="email" name="email" id="email" class="field__input" placeholder="par exemple: amandine@briol.be">
                             <?php if(isset($errors['email'])): ?>
                                 <p class="field__error"><?= $errors['email']; ?></p>
                             <?php endif; ?>
                         </div>
                         <div class="field">
                             <label for="message" class="field__label">Message</label>
-                            <textarea name="message" id="message" class="field__input"></textarea>
+                            <textarea name="message" id="message" class="field__input" placeholder="par exemple:
+Bonjour,
+
+Je voudrais bien que vous me fassiez un site web pour ma boulangerie.
+
+Bonne journée
+
+Amandine Briol
+"></textarea>
                             <?php if(isset($errors['message'])): ?>
                                 <p class="field__error"><?= $errors['message']; ?></p>
                             <?php endif; ?>
