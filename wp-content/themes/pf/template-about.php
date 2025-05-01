@@ -8,17 +8,24 @@
 <?php get_header(); ?>
 <section class="about-me-container">
     <h2>Qui suis-je?</h2>
+    <?= $description = get_field('description');?>
     <p>
-        Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> de Seraing.
+<!--        Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> de Seraing.
         Je suis très ambitieuse et j’essaie de m’ améliorer tout le temps.
         Je peux me passionner pour beaucoup de choses et je suis toujours prête à découvrir quelque chose de nouveau !
         Avant mes études de Web, j’ai travaillé comme asstistante pharmaceutico-technique.
-        Je sais parler 5 langues dont l’allemand, le français, le néerlandais, l’anglais et le luxembourgeois
+        Je sais parler 5 langues dont l’allemand, le français, le néerlandais, l’anglais et le luxembourgeois-->
     </p>
 </section>
+
+<?= $description_image = get_field('description_image');?>
+
+
+
 <section class="career-container">
     <h2>Mon parcours</h2>
-<ul>
+    <?= $life_path = get_field('life_path');?>
+<!--<ul>
     <li>
         2017 CESS en langues et sciences
     </li>
@@ -34,7 +41,8 @@
     <li>
         2023-2026 Bachelier en Technique Infographie option Web
     </li>
-</ul>
+</ul>-->
+    <?= $life_path_image = get_field('life_path_image');?>
 </section>
 
 <section class="languages-container">
@@ -85,7 +93,10 @@
 // de contenu propre à Wordpress:
 if(have_posts()): while(have_posts()): the_post(); ?>
 
-    <div><?= get_the_content(); ?></div>
+    <div>
+
+
+        <?= get_the_content(); ?></div>
 
 <?php
     // On ferme "la boucle" (The Loop):
