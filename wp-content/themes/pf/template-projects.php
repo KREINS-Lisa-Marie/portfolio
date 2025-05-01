@@ -6,7 +6,7 @@
 <?php get_header(); ?>
 
 <style type="text/css">
-    .sro {
+    /*.sro {
         position: absolute;
         overflow: hidden;
         clip: rect(0 0 0 0);
@@ -76,7 +76,7 @@
 
     body{
         margin: 0;
-        /*background-color: #D6CBE3*/;
+        !*background-color: #D6CBE3*!;
         font-family: "Gotham", sans-serif;
     }
     .header{
@@ -109,7 +109,7 @@
     }
     .discover-me-container{
         background-color: #D6CBE3;
-    }
+    }*/
 
 </style>
 
@@ -120,11 +120,12 @@
 $paged = get_query_var('paged') ? get_query_var('paged') : 1;
 $args = [
     'post_type' => 'project', // ATTENTION changer
-    'posts_per_page' => 3,
+    'posts_per_page' => 6,
     'paged' => $paged,
 ];
 
 $query = new WP_Query($args);
+
 if ($query->have_posts()) :
     while ($query->have_posts()) : $query->the_post(); ?>
     <div class="project__card">
