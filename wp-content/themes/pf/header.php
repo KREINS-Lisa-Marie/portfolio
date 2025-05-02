@@ -10,52 +10,6 @@
 </head>
 <body>
 <header class="header">
-
-    <style type="text/css">
-/*        body{
-            font-size: 14px;
-            font-family: "Gotham", sans-serif;
-            line-height: 160%;
-        }
-        h1{
-            font-family: "Gotham", sans-serif;
-            font-size: 40px;
-        }
-
-        h2 .subline{
-            font-size: 32px;
-            font-family: "STIXGeneral", serif;
-            color: var(--black);
-            padding-top: 16px;
-        }
-        h2{
-            font-size: 24px;
-            font-family: "Gotham", sans-serif;
-            color: var(--dark-violet);
-        }
-        a{
-            text-decoration: none;
-            color: var(--dark-violet);
-            font-size: 20px;
-            font-weight: 700;
-        }
-
-        .header{
-            background-color: var(--header);
-        }
-        body{
-  !*          padding-left: 24px;
-            padding-right: 24px;*!
-        }
-
-        img{
-            border-radius: 16px;
-        }*/
-
-    </style>
-
-
-
     <h1 class="screenreader__only"><?= get_the_title() ?></h1>
 <!--    <figure class="logo">
         <?php /*= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'logo__img']); */?>
@@ -84,4 +38,3 @@
     </nav>
 </header>
 <main id="content">
-
