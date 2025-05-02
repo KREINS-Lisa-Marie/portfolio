@@ -13,6 +13,9 @@ textarea>.field__error{
 .contact__success{
   color: var(--white);
 }
+.contact__success p{
+  margin-left: 16px;
+}
 
 
 .contact {
@@ -46,7 +49,7 @@ textarea>.field__error{
   }
 
   .field__input {
-    color: var(--placeholder);
+    color: var(--black);
     border: none;
     border-radius: 8px;
     padding: 19px 16px;
@@ -62,7 +65,13 @@ textarea>.field__error{
   .field__input, #message{
     font-family: "Gotham", sans-serif;
     font-size: 14px;
+    font-weight: 600;
     min-width: calc(100% - 32px);
+  }
+
+  .field__input::placeholder, #message::placeholder{
+  color: var(--placeholder);
+    font-weight: 500;
   }
 
   .btn {
