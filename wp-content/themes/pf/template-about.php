@@ -9,16 +9,17 @@
 <section class="about-me-container">
     <h2>Qui suis-je?</h2>
     <?= $description = get_field('description');?>
-    <p>
-<!--        Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> de Seraing.
+<!--    <p>
+      Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> de Seraing.
         Je suis très ambitieuse et j’essaie de m’ améliorer tout le temps.
         Je peux me passionner pour beaucoup de choses et je suis toujours prête à découvrir quelque chose de nouveau !
         Avant mes études de Web, j’ai travaillé comme asstistante pharmaceutico-technique.
-        Je sais parler 5 langues dont l’allemand, le français, le néerlandais, l’anglais et le luxembourgeois-->
-    </p>
+        Je sais parler 5 langues dont l’allemand, le français, le néerlandais, l’anglais et le luxembourgeois
+    </p>-->
+    <?= $description_image = get_field('description_image');?>
 </section>
 
-<?= $description_image = get_field('description_image');?>
+
 
 
 
@@ -46,7 +47,7 @@
 </section>
 
 <section class="languages-container">
-    <h2 class="sro languages-title">
+    <h2 class="languages-title">
         Mes langages
     </h2>
     <ul class="languages-list" itemscope itemtype="https://schema.org/Person">
