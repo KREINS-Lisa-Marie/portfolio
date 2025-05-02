@@ -1,29 +1,5 @@
 </main>
 <footer>
-
-    <style type="text/css">
-
-        /*
-        footer{
-            font-size: 14px;
-        }
-        h2{
-            font-weight: 700;
-        }
-        a{
-            font-weight: 500;
-        }
-        .nav__container__footer{
-            padding-left: 0;
-            list-style-type: none;
-        }
-        .nav__container__footer a{
-            padding-top: 16px;
-        }
-        */
-
-    </style>
-
     <div class="related_links">
         <div class="bottom_nav">
             <h2 class="nav_footer_title">Navigation</h2>
@@ -52,7 +28,7 @@
                 </li class=" socials_link">
                 <li>
                     <a href="https://fr.linkedin.com/">Linkedin</a>
-                </li class=" socials_link">
+                </li>
             </ul>
         </div>
     </div>
