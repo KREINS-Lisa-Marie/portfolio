@@ -30,22 +30,63 @@ font-size: 24px;
 
 /* BURGER Menu*/
 
-.nav__header > input:checked ~ label:after {
-  transform: rotate(90deg);
-  padding: 0;
-}
-
-
 input[type="checkbox"]:checked ~ .nav__header {
   left: 0;
 }
 
 input[type="checkbox"] ~ .nav__header {
-  left: -100%;
+  right: 200%;
+}
+
+.burger_menu path {
+  transition: all .25s ;
+  overflow: auto;
+}
+
+
+input[type="checkbox"]:checked ~ .burger_menu {
+  path:first-of-type {
+    transform-origin: center;
+    transform: rotate(45deg) translateY(calc(50% - 2px));
+  }
+
+  path:nth-of-type(2) {
+    transform-origin: center;
+    transform: scale(0);
+  }
+
+  path:last-of-type {
+    transform-origin: center;
+    transform: rotate(-45deg) translateY(calc(-50% + 2px));
+  }
+}
+
+input[type="checkbox"]:checked ~ .nav__container__header{
+display: block;
+  margin-top: 56px;
+  margin-left: -303px;
+
+  }
+
+.nav__item__header{
+  padding-bottom: 16px;
 }
 
 
 
+
+/*
+.nav__header > input:checked ~ label:after {
+  transform: rotate(90deg);
+  padding: 0;
+}
+*/
+
+/*if(input[type="checkbox"]:checked){
+  .nav__container__header, .burger_menu{
+    left: -100%;
+  }
+}*/
 /*  padding: 0 32px;
 
   display: flex;
