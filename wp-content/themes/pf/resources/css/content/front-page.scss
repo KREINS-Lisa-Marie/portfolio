@@ -1,18 +1,35 @@
+/*  TITLES  */
+.main_title {
+  font-size: 40px;
+  color: var(--dark-violet);
+  font-weight: 600;
+  text-align: center;
+  margin-top: 80px;
+  margin-bottom: 20px;
+
+}
+
+.main_subtitle {
+  font-size: 32px;
+  font-family: "STIXGeneral", serif;
+  text-align: center;
+}
+
 /*SECTION DISCOVER ME */
 
-.discover-me-container h2{
+.discover-me-container h2 {
   color: var(--dark-violet);
   margin-top: 88px;
   margin-bottom: 20px;
 }
 
-.discover-me-container h2, .link_discover_me{
+.discover-me-container h2, .link_discover_me {
   margin-left: 24px;
 }
 
-.link_discover_me{
+.link_discover_me {
   display: block;
-  font-size: 20px;      /*    AJOUTER flèche -->      */
+  font-size: 20px; /*    AJOUTER flèche -->      */
   font-weight: 600;
   color: var(--dark-violet);
   margin-top: 40px;
@@ -23,12 +40,23 @@
 /*SECTION Projets récents */
 
 
-.projects h2{
+.project_section h2 {
   display: block;
   color: var(--main-lavender);
   font-size: 24px;
   font-weight: 500;
   font-family: "STIXGeneral", serif;
-padding-top: 40px;
+  padding-top: 40px;
   text-align: center;
 }
+
+.project_section{
+  padding-bottom: 56px;
+}
+
+
+
+/*.project__card{
+  min-width: calc(100% - 48px);
+  background-color: var(--main-lavender);
+}*/

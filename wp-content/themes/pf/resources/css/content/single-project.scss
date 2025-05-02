@@ -1,0 +1,27 @@
+.project__header>.project__title{
+  margin-bottom: 20px;
+}
+.project__subline{
+margin-bottom: 56px;
+  text-align: center;
+  font-size: 32px;
+  font-family: "STIXGeneral", serif;
+  font-weight: 500;
+}
+
+.project__proporties{
+  padding-top: 40px ;
+  padding-bottom: 56px;
+}
+
+.project__proporties__title{
+  margin-left: 24px;
+  font-size: 24px;
+  font-weight: 600;
+  padding-bottom: 16px;
+  color: var(--dark-violet);
+}
+
+.project__goal, .project__steps{
+  padding-bottom: 32px;
+}

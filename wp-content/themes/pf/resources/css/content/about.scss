@@ -1,0 +1,50 @@
+/*    about me     */
+
+.about-me-container {
+  margin: 80px 24px 50px;
+
+  h2 {
+    color: var(--dark-violet);
+  }
+
+  p {
+    margin: 0;
+    padding-top: 16px;
+  }
+}
+
+
+/*    CAREER    */
+
+.career-container {
+  margin: 0 24px 70px;
+
+  h2 {
+    color: var(--dark-violet);
+    margin-bottom: 20px;
+  }
+
+  li {
+    margin-left: 10px;
+    line-height: 250%;
+    list-style-type: "- ";
+  }
+
+}
+
+/*    Languages     */
+.languages-container {
+  background-color: var(--dark-violet);
+  padding: 0 24px 56px ;
+
+  .languages-title {
+    color: var(--main-lavender);
+    font-family: "STIXGeneral", serif;
+    font-size: 24px;
+    text-align: center;
+    font-weight: 500;
+    padding-top: 40px;
+    padding-bottom: 56px;
+  }
+
+}

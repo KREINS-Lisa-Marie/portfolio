@@ -4,12 +4,15 @@
 @use 'settings/colors';
 @use 'settings/fonts';
 
+@use 'content/single-project';
+@use 'content/about';
 @use 'content/contact';
 @use 'content/front-page';
+@use 'content/my-projects';
 @use 'content/text-media';
 @use 'content/stage';
 @use 'content/searchbar';
-@use 'content/trip';
+@use 'content/project-cards';
 
 @use 'general/footer';
 @use 'general/general';

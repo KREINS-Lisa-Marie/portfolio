@@ -1,11 +1,28 @@
+textarea>.field__error{
+  color: var(--white);
+  margin-top: -40px;
+  margin-bottom: 24px;
+}
+
+.field__error{
+  color: var(--white);
+  margin-top: -16px;
+  margin-bottom: 24px;
+}
+
+.contact__success{
+  color: var(--white);
+}
 
 
 .contact {
   background-color: var(--dark-violet);
   border-radius: 16px;
   padding: 64px 24px;
+  margin-bottom: 56px;
   font-size: 14px;
   background-image: image("../../img/background-rose.webp");
+
 
   .form_title{
     margin-bottom: 21px;
@@ -35,19 +52,17 @@
     padding: 19px 16px;
     display: block;
     margin-bottom: 24px;
-    min-width: calc(100% - 48px);         /*      A CORRIGER LARGEUR      */
   }
   #message{
     margin-bottom: 48px;
     border: none;
     min-height: 200px;
-
   }
 
   .field__input, #message{
     font-family: "Gotham", sans-serif;
     font-size: 14px;
-
+    min-width: calc(100% - 32px);
   }
 
   .btn {
@@ -62,5 +77,4 @@
     min-width: 100%;
     font-family: "Gotham", sans-serif;
   }
-
 }

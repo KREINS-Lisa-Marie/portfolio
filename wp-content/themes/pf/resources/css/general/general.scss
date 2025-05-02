@@ -83,7 +83,7 @@ a{
 body {
   font-family: "Gotham", sans-serif;
   font-size: 14px;
-  font-weight: 500;
+/*  font-weight: 500;*/
   background-color: var(--main-lavender);
   background-image: image("../../img/background-rose.webp");
 
@@ -109,21 +109,22 @@ body {
   p {
     margin-left: 24px;
     margin-right: 24px;
+    line-height: 160%;
   }
 
-  .projects {
+  .project_section {
 
     background-color: var(--dark-violet);
 
 
 
-    .project__card {
-      margin-right: 24px;
-      margin-left: 24px;
+/*    .project__card {
+!*      margin-right: 24px;
+      margin-left: 24px;*!
       min-width: 100%;
       min-height: auto;
       background-color: var(--white);
-    }
+    }*/
 
     .project__link {
       font-size: 24px;
@@ -131,11 +132,21 @@ body {
   }
 
   .more_projects_link {
-    display: block;
     font-weight: 600;
     font-size: 20px;
     color: var(--main-lavender);
     text-align: center;
   }
 
+}
+
+.link_with_arrow{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 8px;
+}
+
+.more_projects{
+  stroke: var(--main-lavender);
 }
