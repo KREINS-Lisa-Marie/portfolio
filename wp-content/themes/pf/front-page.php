@@ -1,88 +1,23 @@
-<?php  include ('templates/content/stage/stage.php') ?>
+<?php /* include ('templates/content/stage/stage.php') */?>
 <?php get_header(); ?>
-<style type="text/css">
-    .sro {
-        position: absolute;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        height: 1px; width: 1px;
-        margin: -1px;
-        padding: 0;
-        border: 0;
-    }
-    /*
-    .trips {
-        display: flex;
-        justify-content: flex-start;
-        align-items: flex-start;
-        gap: 1em;
-    }
-    .project {
-        position: relative;
-        width: calc((100% - 3em)/4);
-    }
-    .project__link {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        z-index: 1;
-    }
-    .project__link:hover + .trip__card,
-    .project__link:focus + .trip__card {
-        transform: translate3d(0, -4px, 0);
-    }
-    .project__card {
-        position: relative;
-        z-index: 0;
-        background: white;
-        border-radius: 4px;
-        overflow: hidden;
-        -webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
-        -moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
-        box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.2);
-        display: flex;
-        flex-direction: column-reverse;
-        transition: transform 200ms ease-out;
-    }
-    .project__fig {
-        display: block;
-        position: relative;
-        height: 0;
-        padding: 60% 0 0 0;
-        margin: 0;
-    }
-    .project__img {
-        display: block;
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-    .project__head {
-        padding: 1em;
-    }
 
-
-
-    */
-
-
-</style>
+<h2 class="main_title">
+    <?= get_field('main_title'); ?>
+</h2>
+<h3 class="main_subtitle">
+    <?= get_field('main_subtitle');?>
+</h3>
 
 <section class="discover-me-container">
-    <h2>
-        Fasciné par le web
-    </h2>
-    <p>
-        Je suis Lisa-Marie Kreins et je suis étudiante en 2ème Web à la <abbr title="Haute École de la Province de Liège">HEPL</abbr> de Seraing. Je suis très ambitieuse et j’essaie de m’améliorer tout le temps. Je peux me passionner pour beaucoup de choses et je suis toujours prêt à découvrir quelque chose de nouveau !
-    </p>
-    <a href="http://portfolio.test/a-propros/ " title="Aller vers la page 'A propos'">Me découvrir</a>
+<h2>
+    <?= get_field('article_title');?>
+</h2>
+    <?= get_field('article_text');?>
+    <a href="http://portfolio.test/a-propros/ " title="Aller vers la page 'A propos'" class="link_discover_me">Me découvrir</a>
+<!--    --><?php /*= get_field('change_page_link');*/?>
+
+
+    <?= get_field('decoration_image');?>
 </section>
 <?php
 
@@ -98,13 +33,13 @@ if(have_posts()): while(have_posts()): the_post(); ?>
 endwhile; else: ?>
     <p>La page est vide.</p>
 <?php endif; ?>
-<section class="projects">
+<section class="project_section">
     <h2>Mes projets récents</h2>
-    <div class="trips">
+    <div class="projects">
         <?php
         $projects = new WP_Query([
             'post_type' => 'project',
-            'order' => 'DESC',
+            'order' => 'ASC',
             'orderby' => 'date',
             'posts_per_page' => 3,
         ]);
@@ -114,27 +49,39 @@ endwhile; else: ?>
                 <a href="<?= get_the_permalink(); ?>" class="project__link">
                     <span class="sro">Découvrir le projet <?= get_the_title(); ?></span>
                 </a>
+               <!-- <div class="project__card">
+                    <div class="project__head">
+                        <h3 class="project__title"><?php /*= get_the_title(); */?></h3>
+                    </div>
+                    <figure class="project__fig">
+                        <?php /*= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'project__img']); */?>
+                    </figure>
+                </div>-->
+
                 <div class="project__card">
-                    <header class="project__head">
+                    <div class="project__head">
                         <h3 class="project__title"><?= get_the_title(); ?></h3>
-                    </header>
+                    </div>
                     <figure class="project__fig">
                         <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'project__img']); ?>
                     </figure>
                 </div>
+
+
             </article>
         <?php endwhile; else: ?>
             <p>Je n'ai pas de projets récents à montrer pour le moment...</p>
         <?php endif; ?>
     </div>
-    <a href="http://portfolio.test/projets/">Voir tous les projets</a>
+    <div class="link_with_arrow more_projects">
+        <a href="http://portfolio.test/projets/" class="more_projects_link">Voir tous les projets </a>
+        <a href="http://portfolio.test/projets/">
+            <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2 13.9993H30M30 13.9993L16 2.91602M30 13.9993L16 25.0827" stroke-width="4"
+                      stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+        </a>
+    </div>
+
 </section>
 <?php get_footer(); ?>
-
-
-
-
-
-
-
-
