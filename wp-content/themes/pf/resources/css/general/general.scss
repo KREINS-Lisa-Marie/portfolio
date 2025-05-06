@@ -79,13 +79,24 @@ a{
 }
 */
 
+body{
+  background-image: url("../../resources/img/background-rose.webp");
+  /*background-position-x: -927px;
+  background-position-y: -573px;*/
+  background-position-x: -487px;
+  background-position-y: 8px;
+  background-repeat: no-repeat;
+  /*background-size: 2933px 2337px;*/
+  background-size: 1026.51px 818px;
 
+}
 body {
   font-family: "Gotham", sans-serif;
   font-size: 14px;
 /*  font-weight: 500;*/
   background-color: var(--main-lavender);
-  background-image: image("../../img/background-rose.webp");
+
+
 
   h2 {
     font-size: 24px;
@@ -149,4 +160,15 @@ body {
 
 .more_projects{
   stroke: var(--main-lavender);
+}
+
+/* Screenreader only */
+.sro{
+  position: absolute;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  height: 1px; width: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
 }
