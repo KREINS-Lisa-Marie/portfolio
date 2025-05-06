@@ -1,4 +1,3 @@
-<?php /* include ('templates/content/stage/stage.php') */?>
 <?php get_header(); ?>
 
 <h2 class="main_title">
