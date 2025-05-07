@@ -11,13 +11,41 @@ footer {
   }
 
 
-  .related_links {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 0 16px;
+  .nav__footer, .socials_container{
+    margin-bottom: 66px;
   }
 
+  @media (max-width: 750px) {
+    .related_links_container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      /*max-width: 48px;*/
+      justify-content: space-between;
+      padding: 0 16px;
+    }
+    .contact_with_arrow{
+      margin-left: 60px;
+    }
+    .nav__footer{
+      margin-right: 60px;
+      margin-bottom: 66px;
+    }
+  }
+
+
+  @media (min-width: 750px ) and ( max-width: 1199px) {
+    .related_links_container {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      padding: 0 16px;
+    }
+    .contact_with_arrow{
+margin-left: 60px;
+    }
+  }
   .socials_list li, .nav__item__footer {
     margin-bottom: 19px;
   }
@@ -25,18 +53,13 @@ footer {
     margin-bottom: 20px ;
   }
 
-/*  .contact__button::after{              !*    A CORRIGER      *!
-    content: "➜";
-    font-weight: 200;
-    font-size: 24px;
-  }*/
   .contact__button{
 /*    display: block;*/
     text-align: center;
     font-size: 20px;
     font-weight: 600;
-    margin-top: 66px;
-    margin-bottom: 66px;
+/*    margin-top: 66px;*/
+/*    margin-bottom: 66px;*/
   }
   .legal_info p{
     line-height: 19px;
@@ -45,24 +68,48 @@ footer {
   }
 }
 
-.sro {
-  position: absolute;
-  overflow: hidden;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  width: 1px;
-  margin: -1px;
-  padding: 0;
-  border: 0;
-}
 
 .contact_with_arrow{
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: center;
   stroke: var(--black);
   gap: 8px;
+  margin-bottom: 66px;
 }
 .arrow_footer{
-  margin-top: 66px;
+/*  margin-top: 66px;*/
 }
+
+/*@media (min-width: 1200px)  {
+  .related_links_container {
+!*    display: block;*!
+    padding: 0 16px;
+  }
+
+  .footer_links_container{
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}*/
+
+@media (min-width: 1200px){
+.related_links_container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+  .contact_with_arrow{
+    margin-left: 0;
+  }
+}
+
+/*  .contact__button::after{              !*    A CORRIGER      *!
+    content: "➜";
+    font-weight: 200;
+    font-size: 24px;
+  }*/
