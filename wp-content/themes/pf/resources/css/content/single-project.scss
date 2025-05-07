@@ -1,27 +1,80 @@
-.project__header>.project__title{
+/*.project__head>.project__title{
   margin-bottom: 20px;
-}
+}*/
+/* PROPRIETES GENERALES DE LA PAGE */
 .project__subline{
-margin-bottom: 56px;
   text-align: center;
-  font-size: 32px;
   font-family: "STIXGeneral", serif;
   font-weight: 500;
 }
 
-.project__proporties{
-  padding-top: 40px ;
-  padding-bottom: 56px;
-}
-
 .project__proporties__title{
-  margin-left: 24px;
-  font-size: 24px;
   font-weight: 600;
-  padding-bottom: 16px;
   color: var(--dark-violet);
 }
 
-.project__goal, .project__steps{
-  padding-bottom: 32px;
+.project-gallery img{
+  border-radius: 16px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+.project-gallery{
+  background-color: var(--dark-violet);
+}
+
+@media (max-width: 1199px) {
+  .project-gallery{
+    padding-top: 40px;
+    padding-bottom: 26px;
+  }
+
+  .project__goal, .project__steps{
+    padding-bottom: 32px;
+  }
+
+  .project__proporties__title{
+    margin-left: 24px;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 16px;
+    color: var(--dark-violet);
+  }
+
+  .project__proporties{
+    padding-top: 40px ;
+    padding-bottom: 56px;
+  }
+
+  .project__subline{
+    margin-bottom: 56px;
+    font-size: 32px;
+  }
+  .project__header>.page__title{
+    margin-bottom: 16px;
+  }
+  .project__problems p, .project__steps p, .project__goal p{
+    max-width: 50em;
+  }
+  .project-gallery img{
+    height: 325px;
+    width: calc(100% - 48px);
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 30px;
+  }
+
+}
+@media (min-width: 750px) and (max-width: 1199px) {
+  .project-gallery img{
+    display: block;
+    max-width: 524px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .project_images_container{
+/*    margin-right: auto;
+    margin-left: auto;*/
+  }
 }

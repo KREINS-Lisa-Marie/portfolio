@@ -6,7 +6,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
 
 
     <div class="project__header">
-        <h2 class="project__title page__title"><?= get_the_title(); ?></h2>
+        <h2 class="page__title"><?= get_the_title(); ?></h2>
        <!-- <?php /*if ($project_subline = get_field('project_subline'):*/?>
         <h3 class="project__subline"><?php /*= $project_subline; */?></h3>
     --><?php /*endif;*/?>
@@ -35,12 +35,14 @@ if(have_posts()): while(have_posts()): the_post(); ?>
     </div>
 </div>
 <div class="project-gallery">
-    <?php $images = get_field('project_gallery');?>
+    <div class="project_images_container">
+        <?php $images = get_field('project_gallery');?>
 
-    <?php if (!empty($images)): foreach ($images as $image): ?>
-    <?= responsive_image($image, ['classes' => 'gallery__img']) ?>
-    <?php endforeach; else: ?>
-    <?php endif;?>
+        <?php if (!empty($images)): foreach ($images as $image): ?>
+            <?= responsive_image($image, ['classes' => 'gallery__img']) ?>
+        <?php endforeach; else: ?>
+        <?php endif;?>
+    </div>
 </div>
 
 <!--    <div class="travel">

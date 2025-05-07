@@ -1,15 +1,103 @@
-.my_projects{
-//padding-left: 24px;
-//padding-right: 24px;
-  margin-bottom: 56px;
+@media (max-width: 1199px) {
+  .my_projects {
+    margin-bottom: 56px;
+  }
 }
 
-.project__card{
+.project__card {
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 32px;
   box-shadow: 0 4px 18px rgb(80 62 101);
 
 }
 
-.my_project_white{
+.my_project_white {
   background-color: var(--white);
 }
+
+@media (max-width: 1199px) {
+  .project__header {
+    max-width: calc(100% - 48px);
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .page__title {
+    margin-top: 256px;
+    margin-bottom: 230px;
+    font-size: 96px;
+  }
+  .my_projects {
+    margin-bottom: 180px;
+  }
+  .project__proporties {
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 1087px;
+  }
+
+  .project__proporties__title {
+    font-size: 36px;
+    max-width: 319px;
+  }
+
+  .project__goal, .project__steps, .project__problems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-content: center;
+    margin-bottom: 160px;
+
+  }
+  .project__goal{
+    margin-top: 296px;
+  }
+
+  .project__proporties__title ~ p {
+    max-width: 672px;
+    font-size: 16px;
+    line-height: 170%;
+  }
+  .project__header>.page__title{
+    margin-bottom: 40px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project__subline{
+    font-size: 74px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .project-gallery{
+/*    padding-top: 180px;
+    padding-bottom: 180px;*/
+    padding: 180px 2%;
+  }
+
+  .project-gallery img{
+    width: 524px;
+    height: 360px;
+    object-position: center;
+    object-fit: cover;
+  }
+  .project_images_container{
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    flex-wrap: wrap;
+    max-width: 1642px ;
+  }
+}
+
+/*  .project-gallery {
+
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }*/

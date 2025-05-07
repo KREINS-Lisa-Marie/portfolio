@@ -91,6 +91,7 @@ margin-bottom: 24px;
 
 @media (min-width: 1200px) {
   div.projects{
+    justify-content: center;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 100px;
