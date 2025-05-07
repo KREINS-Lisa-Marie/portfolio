@@ -78,16 +78,39 @@ a{
   grid-gap: 20px;
 }
 */
-
-body{
-  background-image: url("../../resources/img/background-rose.webp");
-  /*background-position-x: -927px;
-  background-position-y: -573px;*/
+@media (max-width: 749px) {
+  body{
+  background-image: url("/wp-content/themes/pf/resources/img/background-rose.webp");
   background-position-x: -487px;
   background-position-y: 8px;
+  background-size: 1026.51px 818px;
+  }
+}
+@media (min-width: 750px) and (max-width: 1199px) {
+  body{
+    background-image: url("/wp-content/themes/pf/resources/img/background-rose.webp");
+    background-position-x: -487px;
+    background-position-y: 8px;
+    background-size: 1600px 1275px;
+  }
+}
+
+@media (min-width: 1200px) {
+  body{
+  background-image: url("/wp-content/themes/pf/resources/img/background-rose.webp");
+  background-position-x: -927px;
+  background-position-y: -572;
+  background-size: 2933px 2337px;
+  }
+}
+
+body{
+  /*background-position-x: -927px;
+  background-position-y: -573px;*/
+
   background-repeat: no-repeat;
   /*background-size: 2933px 2337px;*/
-  background-size: 1026.51px 818px;
+
 
 }
 body {
@@ -142,12 +165,7 @@ body {
     }
   }
 
-  .more_projects_link {
-    font-weight: 600;
-    font-size: 20px;
-    color: var(--main-lavender);
-    text-align: center;
-  }
+
 
 }
 
