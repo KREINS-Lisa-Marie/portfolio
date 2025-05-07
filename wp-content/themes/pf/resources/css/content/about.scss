@@ -1,8 +1,6 @@
 /*    about me     */
 
 .about-me-container {
-  margin: 80px 24px 50px;
-
   h2 {
     color: var(--dark-violet);
   }
@@ -11,85 +9,211 @@
     margin: 0;
     padding-top: 16px;
   }
-
-
-
 }
-.about_description_image img, .about_life_path_image img{
-  width: 100% ;
-  height: auto;
+
+.about_description_image img, .about_life_path_image img {
   border-radius: 16px;
-  margin-top: 24px;
   box-shadow: 18px 24px 90px rgb(80 62 101);
-}
-
-.about_life_path_image img{
-  margin-top: 30px;
 }
 
 /*    CAREER    */
 
 .career-container {
-  margin: 0 24px 70px;
-
   h2 {
     color: var(--dark-violet);
     margin-bottom: 20px;
   }
-
-  li {
-    margin-left: 10px;
-    line-height: 250%;
-    list-style-type: "- ";
-  }
-
 }
+
 
 /*    Languages     */
 .languages-container {
   background-color: var(--dark-violet);
-  padding: 0 24px 56px ;
+  padding: 0 24px 56px;
 
   .languages-title {
     color: var(--main-lavender);
     font-family: "STIXGeneral", serif;
-    font-size: 24px;
     text-align: center;
     font-weight: 500;
-    padding-top: 40px;
-    padding-bottom: 56px;
   }
 
-  .languages-list{
+  .languages-list {
     display: flex;
+    text-align: start;
+    justify-content: center;
+    align-content: center;
+  }
+
+  .languages-element {
+    background-color: var(--main-lavender);
+    border-radius: 16px;
+
+    p.language_name {
+      font-size: 24px;
+      font-weight: 800;
+      margin-left: 32px;
+      margin-bottom: 18px;
+      margin-top: 18px;
+      color: var(--dark-violet);
+    }
+
+    .language_image_container {
+      min-height: 325px;
+      min-width: 325px;
+      text-align: center;
+    }
+
+    img {
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      padding-top: calc(325px - calc(162.5px + 58.5px));
+      padding-bottom: calc(325px - calc(162.5px + 58.5px));
+    }
+  }
+}
+
+
+/*  mobile  */
+@media (max-width: 749px) {
+  .about-me-container {
+    margin: 80px 24px 50px;
+  }
+  .about_description_image img, .career-container img {
+    width: 100%;
+    height: auto;
+    margin-top: 24px;
+  }
+  .about-me-container p {
+    max-width: 50em;
+  }
+  .career-container {
+    margin: 0 24px 70px;
+  }
+  .career-container li {
+    margin-left: 10px;
+    line-height: 250%;
+    list-style-type: "- ";
+  }
+  /*  languages */
+  .languages-element {
+    max-width: 325px;
+  }
+  .languages-list {
     flex-direction: column;
     row-gap: 32px;
     flex-wrap: wrap;
-    text-align: start;
-    justify-content: center;
   }
-
-.languages-element{
-  background-color: var(--main-lavender);
-  border-radius: 16px;
-  min-height: 384px;
-
-  h3{
+  .languages-title {
     font-size: 24px;
-    font-weight: 800;
-    margin-left: 32px;
-    margin-top: 96px;
-    margin-bottom: 20px;
-  }
-  img{
-    margin-top: 96px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-
-
-
+    padding-top: 40px;
+    padding-bottom: 56px;
   }
 }
+
+/*  tablet  */
+@media (min-width: 750px) and (max-width: 1199px) {
+  .career-container li {
+    margin-left: 10px;
+    line-height: 250%;
+    list-style-type: "- ";
+  }
+  .about-me-container {
+    margin-top: 150px;
+    margin-bottom: 120px;
+  }
+  .career-container {
+    margin-bottom: 120px;
+  }
+  .about_description_image img, .career-container img {
+    width: 557px;
+    height: 400px;
+  }
+  .about-me-container p {
+    max-width: 50em;
+    font-size: 16px;
+    line-height: 170%;
+  }
+  .text_info_about_life, .about-me-container p {
+    margin-bottom: 30px;
+  }
+  .text_info_about_me, .text_info_about_life, .about_description_image img, .career-container img {
+    margin-left: 24px;
+  }
+  /*  languages */
+  .languages-list {
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+    margin-bottom: 180px;
+  }
+  .languages-title {
+    font-size: 74px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
+}
+
+/*  desktop */
+@media (min-width: 1200px) {
+  .about-me-container {
+    margin-top: 325px;
+    margin-bottom: 280px;
+  }
+  .about-me-container p {
+    max-width: 532px;
+    font-size: 16px;
+    line-height: 170%;
+    margin-top: 52px;
+    padding-top: 0;
+  }
+  .text_info_about_life ul {
+    margin-top: 52px;
+  }
+  .text_info_about_life li {
+    margin-top: 28px;
+  }
+  .text_info_about_me, .text_info_about_life {
+    margin-left: 24px;
+  }
+  .career-container, .about-me-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1415px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .career-container {
+    margin-bottom: 120px;
+  }
+  .about_description_image img, .about_life_path_image img {
+    margin-right: 24px;
+  }
+  .about_description_image img, .career-container img {
+    width: 557px;
+    height: 400px;
+    margin-top: 0;
+  }
+  .career-container h2, .about-me-container h2 {
+    font-size: 64px;
+  }
+  /*  languages */
+  .languages-list {
+    flex-direction: row;
+    gap: 100px;
+    flex-wrap: wrap;
+    max-width: 1340px;
+    justify-content: center;
+    align-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 180px;
+  }
+  .languages-title {
+    font-size: 74px;
+    padding-top: 100px;
+    padding-bottom: 80px;
+  }
 }
