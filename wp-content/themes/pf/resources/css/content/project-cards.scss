@@ -1,3 +1,7 @@
+div.projects.all_project_list{
+  padding: 0 0;
+}
+
 div.projects {
   display: flex;
   justify-content: flex-start;
@@ -6,35 +10,22 @@ div.projects {
   position: relative;
   flex-direction: column;
   align-items: center;
+}
 
-
-  &__headline {
-    color: var(--black);
-    font-size: 2rem;
-    font-weight: 700;
-    text-align: center;
-    line-height: 1.25em;
-    padding-bottom: 0.5rem;
-  }
-
-  &__container {
-/*    max-width: var(--grid-container);*/
-/*    display: flex;
-    flex-direction: row;
-    gap: 16px;
-    flex-wrap: wrap;*/
-  }
+.project__card.white_card{
+  background-color: var(--white);
 }
 
 .project {
   width: calc(100% - 48px);
   position: relative;
+max-width: 380px;
+
 
   &__fig {
     display: block;
     position: relative;
-    height: 0;
-    padding: 60% 0 0 0;
+    height: 100%;
     margin: 0;
   }
 
@@ -48,8 +39,8 @@ div.projects {
     height: 100%;
     z-index: 1;
 
-    &:hover + .trip__card,
-    &:focus + .trip__card {
+    &:hover + .project__card,
+    &:focus + .project__card {
       transform: translate3d(0, -4px, 0);
     }
   }
@@ -81,19 +72,11 @@ div.projects {
     background-color: var(--main-lavender);
   }
 
-  &__head {
-    display: flex;
-    flex-direction: column-reverse;
-    justify-content: space-between;
-    gap: 8px;
-    height: 100%;
-    padding: 0 24px 24px;
-  }
-
   &__title {
     font-weight: 600;
     font-size: 24px;
-
+margin-bottom: 24px;
+    margin-left: 24px;
   }
 
   &__card {
@@ -102,5 +85,17 @@ div.projects {
       margin-top: auto;
       text-decoration: underline;
     }
+  }
+}
+
+
+@media (min-width: 1200px) {
+  div.projects{
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 100px;
+    max-width: 1340px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
