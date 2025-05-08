@@ -23,6 +23,9 @@
     color: var(--dark-violet);
     margin-bottom: 20px;
   }
+  li{
+      list-style-type: "- ";
+    }
 }
 
 
@@ -94,7 +97,6 @@
   .career-container li {
     margin-left: 10px;
     line-height: 250%;
-    list-style-type: "- ";
   }
   /*  languages */
   .languages-element {
@@ -117,7 +119,6 @@
   .career-container li {
     margin-left: 10px;
     line-height: 250%;
-    list-style-type: "- ";
   }
   .about-me-container {
     margin-top: 150px;
