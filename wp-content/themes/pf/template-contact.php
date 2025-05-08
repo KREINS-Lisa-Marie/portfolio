@@ -29,24 +29,28 @@ if(have_posts()): while(have_posts()): the_post(); ?>
         <?php else: ?>
             <form action="<?= admin_url('admin-post.php'); ?>" method="POST" class="form">
                 <fieldset class="form__fields">
-                    <div class="field">
-                        <label for="firstname" class="field__label">Prénom</label>
-                        <input type="text" name="firstname" id="firstname" class="field__input" placeholder="par exemple: Amandine">
-                        <?php if(isset($errors['firstname'])): ?>
-                            <p class="field__error"><?= $errors['firstname']; ?></p>
-                        <?php endif; ?>
+                    <div class="name_firstname">
+                        <div class="field">
+                            <label for="firstname" class="field__label">Prénom*</label>
+                            <input type="text" name="firstname" id="firstname" class="field__input"
+                                   placeholder="par exemple: Amandine">
+                            <?php if (isset($errors['firstname'])): ?>
+                                <p class="field__error"><?= $errors['firstname']; ?></p>
+                            <?php endif; ?>
+                        </div>
+
+                        <div class="field">
+                            <label for="lastname" class="field__label">Nom*</label>
+                            <input type="text" name="lastname" id="lastname" class="field__input"
+                                   placeholder="par exemple: Briol">
+                            <?php if (isset($errors['lastname'])): ?>
+                                <p class="field__error"><?= $errors['lastname']; ?></p>
+                            <?php endif; ?>
+                        </div>
                     </div>
 
                     <div class="field">
-                        <label for="lastname" class="field__label">Nom</label>
-                        <input type="text" name="lastname" id="lastname" class="field__input" placeholder="par exemple: Briol">
-                        <?php if(isset($errors['lastname'])): ?>
-                            <p class="field__error"><?= $errors['lastname']; ?></p>
-                        <?php endif; ?>
-                    </div>
-
-                    <div class="field">
-                        <label for="email" class="field__label">Adresse mail</label>
+                        <label for="email" class="field__label">Adresse mail*</label>
                         <input type="email" name="email" id="email" class="field__input" placeholder="par exemple: amandine@briol.be">
                         <?php if(isset($errors['email'])): ?>
                             <p class="field__error"><?= $errors['email']; ?></p>
@@ -54,7 +58,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
                     </div>
 
                     <div class="field">
-                        <label for="message" class="field__label">Message</label>
+                        <label for="message" class="field__label">Message*</label>
                         <textarea name="message" id="message" class="field__input" placeholder="par exemple:
 Bonjour,
 
@@ -69,6 +73,9 @@ Amandine Briol
                             <p class="field__error"><?= $errors['message']; ?></p>
                         <?php endif; ?>
                     </div>
+                    <p class="obligations">
+                        * Champs obligatoires
+                    </p>
                 </fieldset>
                 <div class="form__submit">
                     <?php
