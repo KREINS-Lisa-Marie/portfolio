@@ -1,16 +1,24 @@
 {
   "wp-content/themes/pf/resources/css/styles.scss": {
-    "file": "assets/css-D7OLGghC.css",
+    "file": "assets/css-CtfQmgAz.css",
     "src": "wp-content/themes/pf/resources/css/styles.scss",
     "isEntry": true
   },
-  "wp-content/themes/pf/resources/fonts/Boldonse-Regular.ttf": {
-    "file": "assets/Boldonse-Regular-CsFBvfh4.ttf",
-    "src": "wp-content/themes/pf/resources/fonts/Boldonse-Regular.ttf"
+  "wp-content/themes/pf/resources/fonts/Gotham-Black.otf": {
+    "file": "assets/Gotham-Black-BxPkaytu.otf",
+    "src": "wp-content/themes/pf/resources/fonts/Gotham-Black.otf"
   },
-  "wp-content/themes/pf/resources/fonts/Comfortaa-Regular.ttf": {
-    "file": "assets/Comfortaa-Regular-F0K1qiVV.ttf",
-    "src": "wp-content/themes/pf/resources/fonts/Comfortaa-Regular.ttf"
+  "wp-content/themes/pf/resources/fonts/Gotham-Book.otf": {
+    "file": "assets/Gotham-Book-CFRbwv5m.otf",
+    "src": "wp-content/themes/pf/resources/fonts/Gotham-Book.otf"
+  },
+  "wp-content/themes/pf/resources/fonts/Gotham-Medium.otf": {
+    "file": "assets/Gotham-Medium-C8UMNMeg.otf",
+    "src": "wp-content/themes/pf/resources/fonts/Gotham-Medium.otf"
+  },
+  "wp-content/themes/pf/resources/img/background-rose.webp": {
+    "file": "assets/background-rose-CSPzHByT.webp",
+    "src": "wp-content/themes/pf/resources/img/background-rose.webp"
   },
   "wp-content/themes/pf/resources/js/main.js": {
     "file": "assets/js-Bzsld0tX.js",
