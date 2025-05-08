@@ -1,49 +1,40 @@
+/*MESSAGES DE VALIDATION */
 textarea>.field__error{
   color: var(--white);
   margin-top: -40px;
   margin-bottom: 24px;
 }
-
 .field__error{
   color: var(--white);
   margin-top: -16px;
   margin-bottom: 24px;
 }
-
 .contact__success{
   color: var(--white);
+  font-size: 18px;
+  font-weight: 400;
+  text-align: center;
 }
 .contact__success p{
   margin-left: 16px;
 }
 
 
+/*PARAMETRES GENERAUX*/
+
 .contact {
   background-color: var(--dark-violet);
   border-radius: 16px;
   padding: 64px 24px;
-  margin-bottom: 56px;
-  font-size: 14px;
   background-image: image("../../img/background-rose.webp");
-
-
-  .form_title{
-    margin-bottom: 21px;
-    margin-left: 16px;
-  }
-
-  h3 {
-    font-size: 24px;
-  }
 
   .field__label {
     display: block;
-    font-size: 18px;
     margin-bottom: 16px;
   }
 
-  h3, .field__label {
-    font-weight: 600;
+  .form_title, .field__label {
+    font-weight: 500;
     color: var(--main-lavender);
     margin-left: 24px;
   }
@@ -52,21 +43,16 @@ textarea>.field__error{
     color: var(--black);
     border: none;
     border-radius: 8px;
-    padding: 19px 16px;
     display: block;
-    margin-bottom: 24px;
   }
   #message{
-    margin-bottom: 48px;
     border: none;
     min-height: 200px;
   }
 
   .field__input, #message{
     font-family: "Gotham", sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    min-width: calc(100% - 32px);
+    font-weight: 500;
   }
 
   .field__input::placeholder, #message::placeholder{
@@ -85,5 +71,85 @@ textarea>.field__error{
     text-align: center;
     min-width: 100%;
     font-family: "Gotham", sans-serif;
+  }
+  .obligations{
+    margin-bottom: 48px;
+    color: var(--main-lavender);
+    font-size: 14px;
+  }
+
+}
+
+/*  MOBILE  */
+@media (max-width: 799px) {
+  .field__input {
+    padding: 19px 16px;
+    margin-bottom: 24px;
+  }
+  .form_title{
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 21px;
+    margin-left: 16px;
+  }
+  .field__input, #message{
+    font-size: 14px;
+    min-width: calc(100% - 32px);
+  }
+  .field__label {
+    font-size: 18px;
+  }
+  .contact{
+    margin-bottom: 56px;
+    font-size: 14px;
+  }
+}
+
+
+/*  Tablet  */
+@media (min-width: 800px) and (max-width: 1199px) {
+  .contact{
+    margin-left: 60px ;
+    margin-right: 60px;
+  }
+}
+
+
+/*  Desktop and Tablet  */
+@media (min-width: 800px) {
+  .name_firstname {
+    display: flex;
+    flex-direction: row;
+    row-gap: 40px;
+    justify-content: space-between;
+  }
+  .field{
+    min-width: calc(50% - 20px);
+  }
+  .field__input {
+    padding: 16px 24px;
+    margin-bottom: 32px;
+  }
+  .form_title{
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 40px;
+  }
+  .form{
+    padding-left: 64px;
+    padding-right: 64px;
+  }
+  .contact{
+   padding-right: 0;
+    padding-left: 0;
+    margin-bottom: 180px
+  }
+  ;
+  .field__input, #message{
+    font-size: 18px;
+    min-width: calc(100% - 48px);
+  }
+  .field__label{
+    font-size: 24px;
   }
 }
