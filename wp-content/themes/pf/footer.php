@@ -43,7 +43,7 @@
                 <!--        A REVOIR FLECHE !!!             -->
 
 
-                <a href="http://portfolio.test/contact/" class="arrow_footer">
+                <a href="http://portfolio.test/contact/" class="arrow_footer" title="Aller vers la page 'Contact'">
                     <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M2 13.9993H30M30 13.9993L16 2.91602M30 13.9993L16 25.0827" stroke-width="4"
                               stroke-linecap="round" stroke-linejoin="round"/>
@@ -55,7 +55,7 @@
     </div>
     <div class="legal_info">
         <p>
-            © 2025 Kreins Lisa-Marie. Tous droits réservés. Crée par Kreins Lisa-Marie.
+            © 2025 <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>. Tous droits réservés. Crée par <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
         </p>
         <p>
             <a href="http://portfolio.test/privacy-policy/ " title="Aller vers la page 'Mentions légales'" >Mentions légales</a>

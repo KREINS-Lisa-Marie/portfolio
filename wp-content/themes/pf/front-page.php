@@ -6,12 +6,12 @@
     <h2 class="main_title">
         <?= get_field('main_title'); ?>
     </h2>
-    <h3 class="main_subtitle">
+    <h3 class="main_subtitle" itemprop="jobTitle">
         <?= get_field('main_subtitle'); ?>
     </h3>
 
 <div class="introduction_container">
-    <section class="discover-me-container">
+    <section class="discover-me-container" itemprop="description">
         <h2>
             <?= get_field('article_title'); ?>
         </h2>

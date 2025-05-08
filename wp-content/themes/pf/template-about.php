@@ -6,7 +6,7 @@
 <?php get_header(); ?>
 
 <section class="about-me-container">
-    <div class="text_info_about_me">
+    <div class="text_info_about_me" itemprop="description">
         <h2>Qui suis-je?</h2>
         <?= $description = get_field('description'); ?>
     </div>
