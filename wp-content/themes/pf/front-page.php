@@ -17,21 +17,16 @@
         </h2>
         <?= get_field('article_text'); ?>
 
-
-        <!--        HELP        -->
-        <!--        A REVOIR FLECHE !!!             -->
-
-        <a href="http://portfolio.test/a-propros/ " title="Aller vers la page 'A propos'" class="link_discover_me">Me
-            découvrir</a>
-        <a href="http://portfolio.test/a-propros/">
+        <a href="<?= get_field('change_page_link'); ?>" title="Aller vers la page 'A propos'" class="link_discover_me">Me
+            découvrir
             <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 28"
                  class="arrow_discover">
                 <path class="st0" d="M2.2,13.3h28M30.2,13.3L16.2,2.3M30.2,13.3l-14,11.1"/>
             </svg>
         </a>
-
-
     </section>
+
+
     <div class="discover_image">
         <?php
         $discover_image = get_field('decoration_image');
@@ -88,9 +83,8 @@
             <!--        A REVOIR FLECHE !!!             -->
         </div>
         <div class="link_with_arrow more_projects">
-            <a href="http://portfolio.test/projets/" class="more_projects_link">Voir tous les projets </a>
-            <a href="http://portfolio.test/projets/">
-                <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <a href="http://portfolio.test/projets/" class="more_projects_link" title="Aller vers la page 'Projets'" >Voir tous les projets
+                <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow_projects">
                     <path d="M2 13.9993H30M30 13.9993L16 2.91602M30 13.9993L16 25.0827" stroke-width="4"
                           stroke-linecap="round" stroke-linejoin="round"/>
                 </svg>
