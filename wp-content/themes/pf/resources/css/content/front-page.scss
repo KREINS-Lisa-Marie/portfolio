@@ -22,29 +22,36 @@
   margin-bottom: 20px;
 }
 
-.discover-me-container h2, .link_discover_me {
+.discover-me-container h2{
   margin-left: 24px;
 }
 
 .link_discover_me {
-  display: inline-block;
+  margin-left: 24px;
+  display: inline-flex;
   font-size: 20px; /*    AJOUTER flèche -->      */
   font-weight: 600;
   color: var(--dark-violet);
   margin-top: 40px;
   margin-bottom: 56px;
   line-height: 28px;
-  vertical-align: center;
+  gap: 0.5rem; /* Abstand zwischen Text und Pfeil */
+  justify-content: center;
 }
-.arrow_discover{
+.arrow_discover, .arrow_contact{
   display: inline-block;
   fill: none;
-  stroke: var(--dark-violet);
   stroke-linecap: round;
   stroke-linejoin: round;
   stroke-width: 4px;
   line-height: 28px;
   vertical-align: center;
+}
+.arrow_discover{
+  stroke: var(--dark-violet);
+}
+.arrow_contact{
+  stroke: var(--black);
 }
 
 .discover_image img{
@@ -56,6 +63,14 @@
   margin-bottom: 56px;
   box-shadow: 18px 24px 90px rgb(80 62 101);
 }
+.more_projects_link{
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  gap: 8px;
+}
+
 
 
 
@@ -87,7 +102,6 @@
 
 .more_projects_link{
   line-height: 28px;
-  vertical-align: center;
 }
 
 
@@ -178,5 +192,25 @@
 .more_projects_link {
   font-weight: 600;
   color: var(--main-lavender);
+  text-align: center;
+}
+.more_projects{
+  stroke: var(--main-lavender);
+}
+
+
+
+.arrow_contact, .arrow_discover{
+  transition: transform 0.3s ease;
+}
+.arrow_projects{
+  transition: transform 0.3s ease;
+}
+.link_contact_me:hover .arrow_contact, .link_discover_me:hover .arrow_discover,
+.more_projects_link:hover .arrow_projects{
+  transform: translateX(5px); /* Pfeil bewegt sich beim Hover nach rechts */
+}
+
+.link_with_arrow{
   text-align: center;
 }
