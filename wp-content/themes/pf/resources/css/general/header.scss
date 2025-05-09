@@ -1,23 +1,6 @@
 .header {
 
   z-index: 10;
-  /*   display: grid;
-     grid-template-areas: "logo burger"
-           "nav . ";
-     grid-gap: 50px;
-
-     .logo_image{
-       grid-area: logo;
-     }
-     .burger_menu, #burger_menu{
-       grid-area: burger;
-       justify-self: end;
-     }
-     .nav__container__header{
-       grid-area: nav;
-       justify-self: start;
-     }*/
-
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
 
@@ -34,24 +17,7 @@
     position: relative;
     /*    left: -100%;*/
   }
-
-  /*.burger_menu, #burger_menu{
-  position: relative;
 }
-  .nav__container__header{
-    position: absolute;
-  }*/
-
-}
-
-/*$nav = .nav__header
-       $checked = input:checked ~ .nav__container__header
-@media (max-width: 1199px) {
-  @if($nav contains $checked){
-    $nav{
-  min-height: 300px;}
-  }*/
-
 
 @media (max-width: 1199px) {
   header{
@@ -72,54 +38,51 @@
   input[type="checkbox"]:checked ~ .nav__header {
     left: 0
   }
-
   input[type="checkbox"] ~ .nav__header {
     /*  right: 200%;*/
     /*left: -100%;*/
   }
-
 
   /*Animation du X dans le Burger */
   .burger_menu path {
     transition: all .25s;
     overflow: auto;
   }
-
   input[type="checkbox"]:checked ~ .burger_menu {
     path:first-of-type {
       transform-origin: center;
       transform: rotate(45deg) translateY(calc(50% - 2px));
     }
-
     path:nth-of-type(2) {
       transform-origin: center;
       transform: scale(0);
     }
-
     path:last-of-type {
       transform-origin: center;
       transform: rotate(-45deg) translateY(calc(-50% + 2px));
     }
   }
-
-
 }
 
 @media (min-width: 1200px) {
   input, label{
     display: none;
   }
+
   .header {
     padding-left: 5%;
     padding-right: 5%;
     padding-top: 22px;
     padding-bottom: 22px;
     width: calc(100% - 10%); /* Full width */
-
   }
   .nav__header{
     display: flex;
   }
-
 }
 
+.header_container{
+  max-width: 1415px ;
+  margin-left: auto;
+  margin-right: auto;
+}
