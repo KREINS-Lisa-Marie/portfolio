@@ -49,9 +49,9 @@
         <input type="checkbox" id="burger_menu" name="burger_menu">
         <label for="burger_menu" class="burger_menu">
             <svg width="24" height="22" viewBox="0 0 24 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M2 2H22" stroke="#38312F" stroke-width="2" stroke-linecap="square"/>
-                <path d="M2 11H22" stroke="#38312F" stroke-width="2" stroke-linecap="square"/>
-                <path d="M2 20H22" stroke="#38312F" stroke-width="2" stroke-linecap="square"/>
+                <path d="M2 2H22" stroke="#000" stroke-width="2" stroke-linecap="square"/>
+                <path d="M2 11H22" stroke="#000" stroke-width="2" stroke-linecap="square"/>
+                <path d="M2 20H22" stroke="#000" stroke-width="2" stroke-linecap="square"/>
             </svg>
         </label>
         <ul class="nav__container__header">
