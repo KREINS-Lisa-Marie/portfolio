@@ -33,24 +33,14 @@
                 </ul>
             </div>
 
-
-            <div class="contact_with_arrow">
-                <a href="http://portfolio.test/contact/" title="Aller vers la page 'Contact'" class="contact__button">
-                    Contactez-moi
-                </a>
-
-
-                <!--        A REVOIR FLECHE !!!             -->
-
-
-                <a href="http://portfolio.test/contact/" class="arrow_footer" title="Aller vers la page 'Contact'">
-                    <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M2 13.9993H30M30 13.9993L16 2.91602M30 13.9993L16 25.0827" stroke-width="4"
-                              stroke-linecap="round" stroke-linejoin="round"/>
+            <div class="contact_with_arrow_container more_contact_container">
+                <a href="<?= get_field('change_page_link'); ?>" title="Aller vers la page 'Contact'" class="link_contact_me">Contactez-moi
+                    <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 28"
+                         class="arrow_contact">
+                        <path class="st0" d="M2.2,13.3h28M30.2,13.3L16.2,2.3M30.2,13.3l-14,11.1"/>
                     </svg>
-                </a></div>
-        </div>
-
+                </a>
+ </div>
 
     </div>
     <div class="legal_info">
