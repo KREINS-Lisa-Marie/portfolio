@@ -5,7 +5,8 @@ textarea>.field__error{
   margin-bottom: 24px;
 }
 .field__error{
-  color: var(--white);
+  font-weight: 500;
+  color: var(--error-red);
   margin-top: -16px;
   margin-bottom: 24px;
 }
@@ -72,6 +73,13 @@ textarea>.field__error{
     min-width: 100%;
     font-family: "Gotham", sans-serif;
   }
+  .btn:hover{
+    font-size: 24px;
+    padding: 16px;
+    background-color: var(--white);
+    border: 1px solid var(--placeholder);
+  }
+
   .obligations{
     margin-bottom: 48px;
     color: var(--main-lavender);
@@ -102,6 +110,9 @@ textarea>.field__error{
   .contact{
     margin-bottom: 56px;
     font-size: 14px;
+  }
+  .field__input:focus{
+    border: 10px solid var(--black);
   }
 }
 
