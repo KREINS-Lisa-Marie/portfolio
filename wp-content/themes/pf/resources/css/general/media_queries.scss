@@ -1,0 +1,42 @@
+@media (min-width: 1200px) {
+  .header{
+    align-items: center;
+    padding-top: 22px ;
+    padding-bottom: 22px ;
+    padding-right: 5%;
+    padding-left: 5%;
+  }
+
+
+  #burger_menu, .burger_menu{
+    display: none;
+  }
+
+  .nav__container__header, .nav__header>input:not(:checked)~.nav__container__header{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: center;
+    min-width: auto;
+position: initial;
+    gap: 60px;
+  }
+
+.contact{
+  max-width: 1008px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.related_links{
+  display: grid;
+  grid-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+
+
+
+
+
+}
