@@ -40,11 +40,11 @@
 <body>
 <header class="header">
     <h1 class="sro"><?= get_the_title() ?></h1>
-    <a href="http://portfolio.test/" title="Aller vers la page d'accueil"> <img src="/wp-content/themes/pf/resources/img/logo.svg" alt="Logo Lisa-Marie Kreins" width="30"
-                       height="24" class="logo_image"></a>
     <nav class="nav__header">
         <h2 class="sro">Navigation pricinpale</h2>
-        <a href="#content" class="sro">Aller au contenu principal</a>
+        <a href="http://portfolio.test/" title="Aller vers la page d'accueil"> <img src="/wp-content/themes/pf/resources/img/logo.svg" alt="Logo Lisa-Marie Kreins" width="30" height="24" class="logo_image"></a>
+
+        <a href="#content" class="sro skip" title="Aller au contenu principal">Aller au contenu principal</a>
 
         <input type="checkbox" id="burger_menu" name="burger_menu">
         <label for="burger_menu" class="burger_menu">
@@ -63,4 +63,5 @@
         </ul>
     </nav>
 </header>
+
 <main id="content" itemscope itemtype="https://schema.org/Person">
