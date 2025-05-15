@@ -55,7 +55,7 @@
             <?php endwhile; else: ?>
                 <p>Je n'ai pas de projets récents à montrer pour le moment...</p>
             <?php endif; ?>
-
+        </div>
 </section>
 
 

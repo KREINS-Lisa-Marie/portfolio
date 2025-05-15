@@ -34,22 +34,27 @@
             </div>
 
             <div class="contact_with_arrow_container more_contact_container">
-                <a href="<?= get_field('change_page_link'); ?>" title="Aller vers la page 'Contact'" class="link_contact_me">Contactez-moi
+                <a href="<?= get_field('change_page_link'); ?>" title="Aller vers la page 'Contact'"
+                   class="link_contact_me">Contactez-moi
                     <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 28"
                          class="arrow_contact">
                         <path class="st0" d="M2.2,13.3h28M30.2,13.3L16.2,2.3M30.2,13.3l-14,11.1"/>
                     </svg>
                 </a>
- </div>
+            </div>
 
+        </div>
     </div>
-    <div class="legal_info">
-        <p>
-            © 2025 <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>. Tous droits réservés. Crée par <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
-        </p>
-        <p>
-            <a href="http://portfolio.test/privacy-policy/ " title="Aller vers la page 'Mentions légales'" >Mentions légales</a>
-        </p></div>
+        <div class="legal_info" itemscope itemtype="https://schema.org/Person">
+            <p>
+                © 2025 <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>. Tous
+                droits réservés. Crée par <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
+            </p>
+            <p>
+                <a href="http://portfolio.test/privacy-policy/ " title="Aller vers la page 'Mentions légales'">Mentions
+                    légales</a>
+            </p>
+        </div>
 </footer>
 </body>
 </html>
