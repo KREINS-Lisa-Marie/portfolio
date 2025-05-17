@@ -13,30 +13,32 @@ if (have_posts()): while (have_posts()): the_post(); ?>
         <h3 class="project__subline"><?= $project_subline = get_field('project_subline'); ?></h3>
     </div>
     <div class="project__proporties">
-        <h3 class="sro">Détails du projet</h3>
+        <h3 class="sro"><?= __hepl('Détails du projet') ?></h3>
         <div class="project__goal">
             <h4 class="project__proporties__title">
-                Objectif du projet
+                <?= __hepl('Objectif du projet') ?>
             </h4>
             <?= $goal = get_field('goal'); ?>
         </div>
 
         <div class="project__steps">
             <h4 class="project__proporties__title">
-                Étapes
+                <?= __hepl('Étapes') ?>
             </h4>
             <?= $steps = get_field('steps'); ?>
         </div>
 
         <div class="project__problems">
             <h4 class="project__proporties__title">
-                Les difficultés rencontrés
+                <?= __hepl('Les difficultés rencontrés') ?>
             </h4>
             <?= $problems = get_field('problems'); ?>
         </div>
     </div>
     <div class="project-gallery">
-        <h3 class="sro">Galerie du projet</h3>
+        <h3 class="sro">
+            <?= __hepl('Galerie du projet') ?>
+        </h3>
         <div class="project_images_container">
             <?php $images = get_field('project_gallery'); ?>
 
