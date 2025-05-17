@@ -4,7 +4,7 @@
 
 <?php get_header(); ?>
     <h2 class="page__title" >
-        Contactez-moi
+        <?= __hepl('Contactez-moi') ?>
     </h2>
 <?php
 // On ouvre "la boucle" (The Loop), la structure de contrôle
@@ -13,7 +13,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
 
     <section class="contact">
         <h3 class="form_title">
-            Formulaire de contact
+            <?= __hepl('Formulaire de contact') ?>
         </h3>
 
         <?php
@@ -31,18 +31,18 @@ if(have_posts()): while(have_posts()): the_post(); ?>
                 <fieldset class="form__fields">
                     <div class="name_firstname">
                         <div class="field">
-                            <label for="firstname" class="field__label">Prénom*</label>
+                            <label for="firstname" class="field__label"> <?= __hepl('Prénom') ?>*</label>
                             <input type="text" name="firstname" id="firstname" class="field__input"
-                                   placeholder="par exemple: Amandine">
+                                   placeholder="<?= __hepl('par exemple: Amandine') ?>">
                             <?php if (isset($errors['firstname'])): ?>
                                 <p class="field__error"><?= $errors['firstname']; ?></p>
                             <?php endif; ?>
                         </div>
 
                         <div class="field">
-                            <label for="lastname" class="field__label">Nom*</label>
+                            <label for="lastname" class="field__label"><?= __hepl('Nom') ?>*</label>
                             <input type="text" name="lastname" id="lastname" class="field__input"
-                                   placeholder="par exemple: Briol">
+                                   placeholder="<?= __hepl('par exemple: Briol') ?>">
                             <?php if (isset($errors['lastname'])): ?>
                                 <p class="field__error"><?= $errors['lastname']; ?></p>
                             <?php endif; ?>
@@ -50,23 +50,24 @@ if(have_posts()): while(have_posts()): the_post(); ?>
                     </div>
 
                     <div class="field">
-                        <label for="email" class="field__label">Adresse mail*</label>
-                        <input type="email" name="email" id="email" class="field__input" placeholder="par exemple: amandine@briol.be">
+                        <label for="email" class="field__label"><?= __hepl('Adresse mail') ?>*</label>
+                        <input type="email" name="email" id="email" class="field__input" placeholder="<?= __hepl('par exemple: amandine@briol.be') ?>">
                         <?php if(isset($errors['email'])): ?>
                             <p class="field__error"><?= $errors['email']; ?></p>
                         <?php endif; ?>
                     </div>
 
                     <div class="field">
-                        <label for="message" class="field__label">Message*</label>
-                        <textarea name="message" id="message" class="field__input" placeholder="par exemple:
+                        <label for="message" class="field__label"><?= __hepl('Message') ?>*</label>
+                        <textarea name="message" id="message" class="field__input" placeholder="<?= __hepl('par exemple:
 Bonjour,
 
 Je voudrais bien que vous me fassiez un site web pour ma boulangerie.
 
 Bonne journée
 
-Amandine Briol
+Amandine Briol') ?>
+
 "></textarea>
 
                         <?php if(isset($errors['message'])): ?>
@@ -74,7 +75,7 @@ Amandine Briol
                         <?php endif; ?>
                     </div>
                     <p class="obligations">
-                        * Champs obligatoires
+                        * <?= __hepl('Champs obligatoires') ?>
                     </p>
                 </fieldset>
                 <div class="form__submit">
@@ -82,7 +83,7 @@ Amandine Briol
                     // ce champ "hidden" permet à WP d'identifier la requête et de la transmettre à notre fonction définie dans functions.php via "add_action('admin_post_[nom-action]')"
                     ?>
                     <input type="hidden" name="action" value="dw_submit_contact_form">
-                    <button type="submit" class="btn">Envoyer</button>
+                    <button type="submit" class="btn"><?= __hepl('Envoyer') ?></button>
                 </div>
             </form>
         <?php endif; ?>
@@ -90,7 +91,7 @@ Amandine Briol
 <?php
     // On ferme "la boucle" (The Loop):
 endwhile; else: ?>
-    <p>La page est vide.</p>
+    <p><?= __hepl('La page est vide') ?>.</p>
 <?php endif; ?>
 <?php get_footer(); ?>
 

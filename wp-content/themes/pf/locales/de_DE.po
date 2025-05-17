@@ -1,0 +1,200 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2025-05-17 09:11+0200\n"
+"PO-Revision-Date: 2025-05-17 09:13+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: de_DE\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.5\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;__hepl\n"
+"X-Poedit-SearchPath-0: .\n"
+
+#: footer.php:6
+msgid "Navigation"
+msgstr "Navigation"
+
+#: footer.php:6
+msgid "de bas de page"
+msgstr "am Seitenende"
+
+#: footer.php:18
+msgid "Réseaux sociaux"
+msgstr "Soziale Netzwerke"
+
+#: footer.php:36 template-contact.php:7
+msgid "Contactez-moi"
+msgstr "Kontaktieren Sie mich"
+
+#: footer.php:48
+msgid "Tous droits réservés. Crée par "
+msgstr "Alle Rechte vorbehalten. Erstellt von "
+
+#: footer.php:51
+msgid "Mentions légales"
+msgstr "Impressum"
+
+#: front-page.php:20
+msgid "Aller vers la page 'A propos'"
+msgstr "Zur Seite „Über mich“ gehen"
+
+#: front-page.php:20
+msgid "Me découvrir"
+msgstr "Mich kennenlernen"
+
+#: front-page.php:43
+msgid "Mes projets récents"
+msgstr "Meine neuesten Projekte"
+
+#: front-page.php:61
+msgid "Découvrir le projet "
+msgstr "Das Projekt erkunden"
+
+#: front-page.php:77
+msgid "Je n'ai pas de projets récents à montrer pour le moment..."
+msgstr "Ich habe im Moment keine aktuellen Projekte, die ich anzeigen kann…"
+
+#: front-page.php:85
+msgid "Voir tous les projets"
+msgstr "Alle Projekte ansehen"
+
+#: header.php:44
+msgid "Navigation principale"
+msgstr "Hauptmenu"
+
+#: header.php:47
+msgid "Aller au contenu principal"
+msgstr "Zum Hauptinhalt gehen"
+
+#: single-project.php:16
+msgid "Détails du projet"
+msgstr "Details des Projektes"
+
+#: single-project.php:19
+msgid "Objectif du projet"
+msgstr "Ziel des Projektes"
+
+#: single-project.php:26
+msgid "Étapes"
+msgstr "Etappen"
+
+#: single-project.php:33
+msgid "Les difficultés rencontrés"
+msgstr "Eventuelle Schwierigkeiten"
+
+#: single-project.php:40
+msgid "Galerie du projet"
+msgstr "Gallerie des Projektes"
+
+#: template-about.php:11
+msgid "Qui suis-je?"
+msgstr "Wer bin ich?"
+
+#: template-about.php:31
+msgid "Mon parcours"
+msgstr "Mein Werdegang"
+
+#: template-about.php:50
+msgid "Mes langages"
+msgstr "Meine Programmiersprachen"
+
+#: template-about.php:56
+msgid "image du langage HTML"
+msgstr "Bild der Programmiersprache HTML"
+
+#: template-about.php:77
+msgid "image du langage de programmation JavaScript"
+msgstr "Bild der Programmiersprache JavaScript"
+
+#: template-about.php:88
+msgid "image du langage de programmation TypeScript"
+msgstr "Bild der Programmiersprache TypeScript"
+
+#: template-about.php:98
+msgid "image du langage de programmation PHP"
+msgstr "Bild der Programmiersprache PHP"
+
+#: template-about.php:109
+msgid "image du langage de programmation MySQL"
+msgstr "Bild der Programmiersprache MySQL"
+
+#: template-contact.php:16
+msgid "Formulaire de contact"
+msgstr "Kontaktformular"
+
+#: template-contact.php:34
+msgid "Prénom"
+msgstr "Vorname"
+
+#: template-contact.php:36
+msgid "par exemple: Amandine"
+msgstr "Zum Beispiel: Amandine"
+
+#: template-contact.php:43
+msgid "Nom"
+msgstr "Name"
+
+#: template-contact.php:45
+msgid "par exemple: Briol"
+msgstr "Zum Beispiel: Briol"
+
+#: template-contact.php:53
+msgid "Adresse mail"
+msgstr "E-Mail Adresse"
+
+#: template-contact.php:54
+msgid "par exemple: amandine@briol.be"
+msgstr "Zum Beispiel: amandine@briol.be"
+
+#: template-contact.php:61
+msgid "Message"
+msgstr "Nachricht"
+
+#: template-contact.php:62
+msgid ""
+"par exemple:\n"
+"Bonjour,\n"
+"\n"
+"Je voudrais bien que vous me fassiez un site web pour ma boulangerie.\n"
+"\n"
+"Bonne journée\n"
+"\n"
+"Amandine Briol"
+msgstr ""
+"Zum Beispiel: \n"
+"Guten Tag, \n"
+"\n"
+"Ich würde mir gerne eine Internetseite von Ihnen für meine Bäckerei "
+"herstellen lassen.\n"
+"\n"
+"Mit freundlichen Grüßen\n"
+"\n"
+"Amandine Briol"
+
+#: template-contact.php:78
+msgid "Champs obligatoires"
+msgstr "Pflichtfeld"
+
+#: template-contact.php:86
+msgid "Envoyer"
+msgstr "Senden"
+
+#: template-contact.php:94
+msgid "La page est vide"
+msgstr "Die Seite ist leer."
+
+#: template-projects.php:12
+msgid "Liste de mes projets:"
+msgstr "Liste meiner Projekte:"
+
+#: template-projects.php:40
+msgid "Découvrir le projet"
+msgstr "Das Projekt erkunden"
+
+#: template-projects.php:57
+msgid "Je n’ai pas de projets récents à montrer pour le moment..."
+msgstr "Ich habe im Moment keine aktuellen Projekte, die ich anzeigen kann…"

@@ -41,10 +41,10 @@
 <header class="header">
     <h1 class="sro"><?= get_the_title() ?></h1>
     <nav class="nav__header">
-        <h2 class="sro">Navigation pricinpale</h2>
+        <h2 class="sro"><?= __hepl('Navigation principale') ?></h2>
         <a href="http://portfolio.test/" title="Aller vers la page d'accueil"> <img src="/wp-content/themes/pf/resources/img/logo.svg" alt="Logo Lisa-Marie Kreins" width="30" height="24" class="logo_image"></a>
 
-        <a href="#content" class="sro skip" title="Aller au contenu principal">Aller au contenu principal</a>
+        <a href="#content" class="sro skip" title="Aller au contenu principal"><?= __hepl('Aller au contenu principal') ?></a>
 
         <input type="checkbox" id="burger_menu" name="burger_menu">
         <label for="burger_menu" class="burger_menu">
@@ -60,7 +60,40 @@
                     <a href="<?= $link->href; ?>" class="nav__link__header"><?= $link->label; ?></a>
                 </li>
             <?php endforeach; ?>
+
+            <!-- On récupère toutes les langues-->
+            <?php foreach (pll_the_languages(['raw' => true]) as $lang): ?>
+                <!--On affiche uniquement la langue qui n'est PAS la langue actuelle-->
+                <?php if (!$lang['current_lang']): ?>
+                    <li class="nav__item__header">
+                        <a href="<?= $lang['url'] ?>"
+                           lang="<?= $lang['locale'] ?>"
+                           hreflang="<?= $lang['locale'] ?>"
+                           class="languages__link nav__link__header"
+                           title="Changer la langue en <?= $lang['name'] ?>">
+                            <?= $lang['slug'] ?><!-- Affiche le code de langue (ex: 'en', 'fr') -->
+                        </a>
+                    </li>
+                <?php endif; ?>
+            <?php endforeach; ?>
+
+
+
+
+
+
+
+           <!-- <?php /*foreach (pll_the_languages(['raw' => true]) as $lang): */?>
+                <li class="languages__item<?php /*= $lang['current_lang'] ? ' languages__item--current' : '' */?>">
+                    <a href="<?php /*= $lang['url'] */?>" lang="<?php /*= $lang['locale'] */?>" hreflang="<?php /*= $lang['locale'] */?>"
+                       class="languages__link" title="<?php /*= __hepl('Changer la langue en') . $lang['name']*/?>"><?php /*= $lang['slug'] */?></a>
+                </li>
+            --><?php /*endforeach; */?>
         </ul>
+
+
+
+
     </nav>
 </header>
 

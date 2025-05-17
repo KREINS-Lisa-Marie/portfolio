@@ -9,7 +9,7 @@
 <h2 class="page__title"><?= get_the_title(); ?></h2>
 
 <section class="my_projects">
-    <h2 class="sro">Liste de mes projets: </h2>
+    <h2 class="sro"><?= __hepl('Liste de mes projets:') ?></h2>
 
         <div class="projects all_project_list">
 
@@ -37,7 +37,7 @@
 
                 <article class="project">
                     <a href="<?= get_the_permalink(); ?>" class="project__link">
-                        <span class="sro">Découvrir le projet <?= get_the_title(); ?></span>
+                        <span class="sro"><?= __hepl('Découvrir le projet') ?> <?= get_the_title(); ?></span>
                     </a>
 
                     <!--        A REVOIR STRUCTURE !!!             -->
@@ -53,7 +53,9 @@
 
                 </article>
             <?php endwhile; else: ?>
-                <p>Je n'ai pas de projets récents à montrer pour le moment...</p>
+                <p>
+                    <?= __hepl('Je n’ai pas de projets récents à montrer pour le moment...') ?>
+                </p>
             <?php endif; ?>
         </div>
 </section>
