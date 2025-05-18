@@ -30,9 +30,23 @@ if (have_posts()): while (have_posts()): the_post(); ?>
 
         <div class="project__problems">
             <h4 class="project__proporties__title">
-                <?= __hepl('Les difficultés rencontrés') ?>
+                <?= __hepl('Les difficultés rencontrées') ?>
             </h4>
             <?= $problems = get_field('problems'); ?>
+        </div>
+
+        <div class="link__to__extern_project">
+
+
+            <?php if (get_field('link_to_projectpage')):?>
+                <a href="<?= get_field('link_to_projectpage'); ?>" title="<?= __hepl('Aller sur la page du projet') ?>" class="link__to__extern__project__site link_discover_me"><?= __hepl("Vers la page du projet") ?>
+                    <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 28"
+                         class="arrow_discover">
+                        <path class="st0" d="M2.2,13.3h28M30.2,13.3L16.2,2.3M30.2,13.3l-14,11.1"/>
+                    </svg>
+                </a>
+        <?php endif;?>
+
         </div>
     </div>
     <div class="project-gallery">
