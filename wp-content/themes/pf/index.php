@@ -11,7 +11,7 @@ if(have_posts()): while(have_posts()): the_post(); ?>
 <?php
     // On ferme "la boucle" (The Loop):
 endwhile; else: ?>
-    <p>La page n’existe pas.</p>
+    <p><?= __hepl('La page n’existe pas.') ?></p>
 <?php endif; ?>
 <?php get_footer(); ?>
 

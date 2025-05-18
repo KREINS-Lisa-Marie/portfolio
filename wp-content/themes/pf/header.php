@@ -42,8 +42,23 @@
     <h1 class="sro"><?= get_the_title() ?></h1>
     <nav class="nav__header">
         <h2 class="sro"><?= __hepl('Navigation principale') ?></h2>
-        <a href="http://portfolio.test/" title="Aller vers la page d'accueil"> <img src="/wp-content/themes/pf/resources/img/logo.svg" alt="Logo Lisa-Marie Kreins" width="30" height="24" class="logo_image"></a>
+        <?php foreach (pll_the_languages(['raw' => true]) as $lang): ?>
+            <!--On affiche uniquement la langue qui n'est PAS la langue actuelle-->
+            <?php if ($lang['current_lang']): ?>
+                    <a href="<?= esc_url( pll_home_url());?>"
+                       lang="<?= $lang['locale'] ?>"
+                       hreflang="<?= $lang['locale'] ?>"
+                       class="languages__link nav__link__header"
+                       title="<?= __hepl('Aller vers la page d’accueil') ?>">
+                        <img src="/wp-content/themes/pf/resources/img/logo.svg" alt="Logo Lisa-Marie Kreins" width="30" height="24" class="logo_image">
+                    </a>
+            <?php endif; ?>
+        <?php endforeach; ?>
 
+
+<!--
+        <a href="http://portfolio.test/" title="Aller vers la page d'accueil"> <img src="/wp-content/themes/pf/resources/img/logo.svg" alt="Logo Lisa-Marie Kreins" width="30" height="24" class="logo_image"></a>
+-->
         <a href="#content" class="sro skip" title="Aller au contenu principal"><?= __hepl('Aller au contenu principal') ?></a>
 
         <input type="checkbox" id="burger_menu" name="burger_menu">
@@ -57,7 +72,7 @@
         <ul class="nav__container__header">
             <?php foreach(dw_get_navigation_links('header') as $link): ?>
                 <li class="nav__item__header">
-                    <a href="<?= $link->href; ?>" class="nav__link__header"><?= $link->label; ?></a>
+                    <a href="<?= $link->href; ?>" class="nav__link__header" title="<?= __hepl('Aller vers la page ') ?>'<?=$link->label;?>'"><?= $link->label; ?></a>
                 </li>
             <?php endforeach; ?>
 
@@ -71,7 +86,7 @@
                            hreflang="<?= $lang['locale'] ?>"
                            class="languages__link nav__link__header"
                            title="Changer la langue en <?= $lang['name'] ?>">
-                            <?= $lang['slug'] ?><!-- Affiche le code de langue (ex: 'en', 'fr') -->
+                            <?= $lang['slug'] ?><!-- Affiche le code de langue ('fr' ou 'de') -->
                         </a>
                     </li>
                 <?php endif; ?>

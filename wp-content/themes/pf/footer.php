@@ -35,20 +35,19 @@
                 </h2>
                 <ul class="socials_list">
                     <li class="socials_link_item">
-                        <a href="https://www.instagram.com/lisa.marie2601/">Instagram</a>
+                        <a href="https://www.instagram.com/lisa.marie2601/" title="<?= __hepl('Aller voir la page Instagram') ?>">Instagram</a>
                     </li>
                     <li class="socials_link_item">
-                        <a href="https://www.facebook.com/lisamarie.kreins.5">Facebook</a>
+                        <a href="https://www.facebook.com/lisamarie.kreins.5" title="<?= __hepl('Aller voir la page Facebook') ?>">Facebook</a>
                     </li>
                     <li class="socials_link_item">
-                        <a href="https://fr.linkedin.com/">Linkedin</a>
+                        <a href="https://fr.linkedin.com/" title="<?= __hepl('Aller voir la page LinkedIn') ?>">LinkedIn</a>
                     </li>
                 </ul>
             </div>
 
             <div class="contact_with_arrow_container more_contact_container">
-                <a href="<?= get_field('change_page_link'); ?>" title="Aller vers la page 'Contact'"
-                   class="link_contact_me">
+                <a href="<?= get_field('change_page_link'); ?>" title="<?= __hepl("Aller vers la page 'Contact'") ?>" class="link_contact_me">
                     <?= __hepl('Contactez-moi') ?>
                     <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 28"
                          class="arrow_contact">
@@ -61,10 +60,10 @@
     </div>
         <div class="legal_info" itemscope itemtype="https://schema.org/Person">
             <p>
-                © 2025 <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.  <?= __hepl('Tous droits réservés. Crée par ') ?><span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
+                © 2025 <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.  <?= __hepl('Tous droits réservés. Créé par ') ?><span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
             </p>
             <p>
-                <a href="http://portfolio.test/privacy-policy/ " title="Aller vers la page 'Mentions légales'"><?= __hepl('Mentions légales') ?></a>
+                <a href="http://portfolio.test/privacy-policy/ " title="<?= __hepl("Aller vers la page 'Mentions légales'") ?>"><?= __hepl('Mentions légales') ?></a>
             </p>
         </div>
 </footer>

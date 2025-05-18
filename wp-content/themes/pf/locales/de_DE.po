@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-05-17 09:11+0200\n"
-"PO-Revision-Date: 2025-05-17 09:13+0200\n"
+"POT-Creation-Date: 2025-05-17 11:45+0200\n"
+"PO-Revision-Date: 2025-05-18 11:34+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -22,19 +22,39 @@ msgstr "Navigation"
 msgid "de bas de page"
 msgstr "am Seitenende"
 
-#: footer.php:18
+#: footer.php:34
 msgid "Réseaux sociaux"
 msgstr "Soziale Netzwerke"
 
-#: footer.php:36 template-contact.php:7
+#: footer.php:38
+msgid "Aller voir la page Instagram"
+msgstr "Zur Instagram Seite gehen"
+
+#: footer.php:41
+msgid "Aller voir la page Facebook"
+msgstr "Zur Facebook Seite gehen"
+
+#: footer.php:44
+msgid "Aller voir la page Linkedin"
+msgstr "Zur Linkedin Seite gehen"
+
+#: footer.php:50
+msgid "Aller vers la page 'Contact'"
+msgstr "Zur Seite „Kontakt“"
+
+#: footer.php:51 template-contact.php:7
 msgid "Contactez-moi"
 msgstr "Kontaktieren Sie mich"
 
-#: footer.php:48
+#: footer.php:63
 msgid "Tous droits réservés. Crée par "
 msgstr "Alle Rechte vorbehalten. Erstellt von "
 
-#: footer.php:51
+#: footer.php:66
+msgid "Aller vers la page 'Mentions légales'"
+msgstr "Zur Seite „Impressumt“"
+
+#: footer.php:66
 msgid "Mentions légales"
 msgstr "Impressum"
 
@@ -50,6 +70,10 @@ msgstr "Mich kennenlernen"
 msgid "Mes projets récents"
 msgstr "Meine neuesten Projekte"
 
+#: front-page.php:60
+msgid "Aller vers le projet"
+msgstr "Zum Projekt gehen"
+
 #: front-page.php:61
 msgid "Découvrir le projet "
 msgstr "Das Projekt erkunden"
@@ -58,7 +82,11 @@ msgstr "Das Projekt erkunden"
 msgid "Je n'ai pas de projets récents à montrer pour le moment..."
 msgstr "Ich habe im Moment keine aktuellen Projekte, die ich anzeigen kann…"
 
-#: front-page.php:85
+#: front-page.php:82
+msgid "Aller vers la page 'Projets'"
+msgstr "Zur Seite „Meine Projekte“ gehen"
+
+#: front-page.php:82
 msgid "Voir tous les projets"
 msgstr "Alle Projekte ansehen"
 
@@ -69,6 +97,14 @@ msgstr "Hauptmenu"
 #: header.php:47
 msgid "Aller au contenu principal"
 msgstr "Zum Hauptinhalt gehen"
+
+#: header.php:60
+msgid "Aller vers la page "
+msgstr "Zur Seite "
+
+#: index.php:14
+msgid "La page n’existe pas."
+msgstr "Die Seite existiert nicht."
 
 #: single-project.php:16
 msgid "Détails du projet"
@@ -101,6 +137,11 @@ msgstr "Mein Werdegang"
 #: template-about.php:50
 msgid "Mes langages"
 msgstr "Meine Programmiersprachen"
+
+#: template-about.php:55 template-about.php:65 template-about.php:75
+#: template-about.php:86 template-about.php:96 template-about.php:107
+msgid "Aller voir la page du langage"
+msgstr "Zur Seite der Programmiersprache gehen"
 
 #: template-about.php:56
 msgid "image du langage HTML"
@@ -169,9 +210,9 @@ msgstr ""
 "Guten Tag, \n"
 "\n"
 "Ich würde mir gerne eine Internetseite von Ihnen für meine Bäckerei "
-"herstellen lassen.\n"
+"erstellen lassen.\n"
 "\n"
-"Mit freundlichen Grüßen\n"
+"Mit freundlichen Grüßen,\n"
 "\n"
 "Amandine Briol"
 
@@ -190,6 +231,10 @@ msgstr "Die Seite ist leer."
 #: template-projects.php:12
 msgid "Liste de mes projets:"
 msgstr "Liste meiner Projekte:"
+
+#: template-projects.php:39
+msgid "Aller voir la page du projet"
+msgstr "Zur Seite des Projektes gehen"
 
 #: template-projects.php:40
 msgid "Découvrir le projet"

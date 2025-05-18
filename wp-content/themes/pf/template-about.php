@@ -52,7 +52,7 @@
     <ul class="languages-list" itemscope itemtype="https://schema.org/Person">
         <li class="languages-element">
             <div class="language_image_container">
-                <a href="https://html.spec.whatwg.org/multipage/"><img
+                <a href="https://html.spec.whatwg.org/multipage/" title="<?= __hepl('Aller voir la page du langage') ?>"><img
                             src="/wp-content/themes/pf/resources/img/html.svg" alt="<?= __hepl('image du langage HTML') ?>" width="117"
                             height="117" class="languages-image"></a>
             </div>
@@ -62,9 +62,9 @@
         </li>
         <li class="languages-element">
             <div class="language_image_container">
-                <a href="https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/"><img
+                <a href="https://www.w3.org/TR/2001/WD-css3-roadmap-20010523/" title="<?= __hepl('Aller voir la page du langage') ?>"><img
                             src="/wp-content/themes/pf/resources/img/css-3.svg" width="117" height="117"
-                            alt="image du langage CSS " class="languages-image"></a>
+                            alt="<?= __hepl('image du langage CSS') ?>" class="languages-image"></a>
             </div>
             <p itemprop="skills" class="language_name">
                 CSS
@@ -72,7 +72,7 @@
         </li>
         <li class="languages-element">
             <div class="language_image_container">
-                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript"><img
+                <a href="https://developer.mozilla.org/fr/docs/Web/JavaScript" title="<?= __hepl('Aller voir la page du langage') ?>"><img
                             src="/wp-content/themes/pf/resources/img/logo-javascript.svg"
                             alt="<?= __hepl('image du langage de programmation JavaScript') ?>" width="117" height="117"
                             class="languages-image"></a>
@@ -83,7 +83,7 @@
         </li>
         <li class="languages-element">
             <div class="language_image_container">
-                <a href="https://www.typescriptlang.org/docs/"><img
+                <a href="https://www.typescriptlang.org/docs/" title="<?= __hepl('Aller voir la page du langage') ?>"><img
                             src="/wp-content/themes/pf/resources/img/typescript.svg"
                             alt="<?= __hepl('image du langage de programmation TypeScript') ?>" width="117" height="117"
                             class="languages-image"></a></div>
@@ -93,7 +93,7 @@
         </li>
         <li class="languages-element">
             <div class="language_image_container">
-                <a href="https://www.php.net/"><img src="/wp-content/themes/pf/resources/img/OfficialPHPLogo.svg"
+                <a href="https://www.php.net/" title="<?= __hepl('Aller voir la page du langage') ?>"><img src="/wp-content/themes/pf/resources/img/OfficialPHPLogo.svg"
                                                       width="117" height="117"
                                                       alt="<?= __hepl('image du langage de programmation PHP') ?>"
                                                       class="languages-image"></a>
@@ -104,9 +104,9 @@
         </li>
         <li class="languages-element">
             <div class="language_image_container">
-                <a href="https://dev.mysql.com/doc/"><img src="/wp-content/themes/pf/resources/img/mysql.svg"
+                <a href="https://dev.mysql.com/doc/" title="<?= __hepl('Aller voir la page du langage') ?>"><img src="/wp-content/themes/pf/resources/img/mysql.svg"
                                                             width="117" height="117"
-                                                            alt="                <?= __hepl('image du langage de programmation MySQL') ?>"
+                                                            alt="<?= __hepl('image du langage de programmation MySQL') ?>"
                                                             class="languages-image"></a>
             </div>
             <p itemprop="skills" class="language_name">

@@ -45,7 +45,7 @@
             <?php
             $projects = new WP_Query([
                 'post_type' => 'project',
-                'order' => 'ASC',
+                'order' => 'DESC',
                 'orderby' => 'date',
                 'posts_per_page' => 3,
             ]);
@@ -57,7 +57,7 @@
 
             if ($projects->have_posts()): while ($projects->have_posts()): $projects->the_post(); ?>
                 <article class="project">
-                    <a href="<?= get_the_permalink(); ?>" class="project__link">
+                    <a href="<?= get_the_permalink(); ?>" class="project__link" title="<?= __hepl("Aller vers le projet") ?>">
                         <span class="sro"><?= __hepl("Découvrir le projet ") ?><?= get_the_title(); ?></span>
                     </a>
 
@@ -77,12 +77,9 @@
                 <p><?= __hepl("Je n'ai pas de projets récents à montrer pour le moment...") ?></p>
             <?php endif; ?>
 
-
-
-            <!--        A REVOIR FLECHE !!!             -->
         </div>
         <div class="link_with_arrow more_projects">
-            <a href="http://portfolio.test/projets/" class="more_projects_link" title="Aller vers la page 'Projets'" ><?= __hepl("Voir tous les projets") ?>
+            <a href="http://portfolio.test/projets/" class="more_projects_link" title="<?= __hepl("Aller vers la page 'Projets'") ?>" ><?= __hepl("Voir tous les projets") ?>
                 <svg width="32" height="28" viewBox="0 0 32 28" fill="none" xmlns="http://www.w3.org/2000/svg" class="arrow_projects">
                     <path d="M2 13.9993H30M30 13.9993L16 2.91602M30 13.9993L16 25.0827" stroke-width="4"
                           stroke-linecap="round" stroke-linejoin="round"/>

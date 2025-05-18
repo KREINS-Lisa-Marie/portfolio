@@ -20,7 +20,7 @@
                 'post_type' => 'project',
                 'posts_per_page' => 8,
                 'orderby' => 'date',
-                'order' => 'ASC',
+                'order' => 'DESC',
                 'paged' => $paged,
             ];
 
@@ -36,7 +36,7 @@
                 while ($query->have_posts()) : $query->the_post();?>
 
                 <article class="project">
-                    <a href="<?= get_the_permalink(); ?>" class="project__link">
+                    <a href="<?= get_the_permalink(); ?>" class="project__link" title="<?= __hepl('Aller voir la page du projet') ?>">
                         <span class="sro"><?= __hepl('Découvrir le projet') ?> <?= get_the_title(); ?></span>
                     </a>
 
