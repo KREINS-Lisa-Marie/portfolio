@@ -32,34 +32,34 @@ if(have_posts()): while(have_posts()): the_post(); ?>
                     <div class="name_firstname">
                         <div class="field">
                             <label for="firstname" class="field__label"> <?= __hepl('Prénom') ?>*</label>
-                            <input type="text" name="firstname" id="firstname" class="field__input"
+                            <input type="text" name="firstname" id="firstname" class="field__input" aria-required="true"
                                    placeholder="<?= __hepl('par exemple: Amandine') ?>">
                             <?php if (isset($errors['firstname'])): ?>
-                                <p class="field__error"><?= $errors['firstname']; ?></p>
+                                <p class="field__error" role="alert"><?= $errors['firstname']; ?></p>
                             <?php endif; ?>
                         </div>
 
                         <div class="field">
                             <label for="lastname" class="field__label"><?= __hepl('Nom') ?>*</label>
-                            <input type="text" name="lastname" id="lastname" class="field__input"
+                            <input type="text" name="lastname" id="lastname" class="field__input" aria-required="true"
                                    placeholder="<?= __hepl('par exemple: Briol') ?>">
                             <?php if (isset($errors['lastname'])): ?>
-                                <p class="field__error"><?= $errors['lastname']; ?></p>
+                                <p class="field__error" role="alert"><?= $errors['lastname']; ?></p>
                             <?php endif; ?>
                         </div>
                     </div>
 
                     <div class="field">
-                        <label for="email" class="field__label"><?= __hepl('Adresse mail') ?>*</label>
-                        <input type="email" name="email" id="email" class="field__input" placeholder="<?= __hepl('par exemple: amandine@briol.be') ?>">
+                        <label for="email" class="field__label"><?= __hepl('Adresse e-mail') ?>*</label>
+                        <input type="email" name="email" id="email" class="field__input" aria-required="true" placeholder="<?= __hepl('par exemple: amandine@briol.be') ?>">
                         <?php if(isset($errors['email'])): ?>
-                            <p class="field__error"><?= $errors['email']; ?></p>
+                            <p class="field__error" role="alert"><?= $errors['email']; ?></p>
                         <?php endif; ?>
                     </div>
 
                     <div class="field">
                         <label for="message" class="field__label"><?= __hepl('Message') ?>*</label>
-                        <textarea name="message" id="message" class="field__input" placeholder="<?= __hepl('par exemple:
+                        <textarea name="message" id="message" class="field__input" aria-required="true" placeholder="<?= __hepl('par exemple:
 Bonjour,
 
 Je voudrais bien que vous me fassiez un site web pour ma boulangerie.
@@ -71,7 +71,7 @@ Amandine Briol') ?>
 "></textarea>
 
                         <?php if(isset($errors['message'])): ?>
-                            <p class="field__error"><?= $errors['message']; ?></p>
+                            <p class="field__error" role="alert"><?= $errors['message']; ?></p>
                         <?php endif; ?>
                     </div>
                     <p class="obligations">
