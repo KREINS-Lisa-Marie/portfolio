@@ -47,13 +47,33 @@
             </div>
 
             <div class="contact_with_arrow_container more_contact_container">
-                <a href="<?= get_field('change_page_link'); ?>" title="<?= __hepl("Aller vers la page 'Contact'") ?>" class="link_contact_me">
-                    <?= __hepl('Contactez-moi') ?>
+                <?php foreach (pll_the_languages(['raw' => true]) as $lang): ?>
+                    <!--On affiche uniquement la langue qui n'est PAS la langue actuelle-->
+                    <?php if ($lang['current_lang']): ?>
+                        <a href="<?= $lang['slug'] === 'de'? esc_url( pll_home_url()).'kontakt' : esc_url( pll_home_url()).'contact/';
+                        ?>"
+                           lang="<?= $lang['locale'] ?>"
+                           hreflang="<?= $lang['locale'] ?>"
+                           class="link_contact_me"
+                           title="<?= __hepl("Aller vers la page 'Contact'") ?>">
+                            <?= __hepl('Contactez-moi') ?>
+                            <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 28"
+                                 class="arrow_contact">
+                                <path class="st0" d="M2.2,13.3h28M30.2,13.3L16.2,2.3M30.2,13.3l-14,11.1"/>
+                            </svg>
+                        </a>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+
+                <!--
+
+                <a href="<?php /*= get_field('change_page_link'); */?>" title="<?php /*= __hepl("Aller vers la page 'Contact'") */?>" class="link_contact_me">
+                    <?php /*= __hepl('Contactez-moi') */?>
                     <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 28"
                          class="arrow_contact">
                         <path class="st0" d="M2.2,13.3h28M30.2,13.3L16.2,2.3M30.2,13.3l-14,11.1"/>
                     </svg>
-                </a>
+                </a>-->
             </div>
 
         </div>
@@ -63,7 +83,27 @@
                 © 2025 <span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.  <?= __hepl('Tous droits réservés. Créé par ') ?><span itemprop="familyName">Kreins</span> <span itemprop="givenName">Lisa-Marie</span>.
             </p>
             <p>
-                <a href="http://portfolio.test/privacy-policy/ " title="<?= __hepl("Aller vers la page 'Mentions légales'") ?>"><?= __hepl('Mentions légales') ?></a>
+<!--                <a href="http://portfolio.test/privacy-policy/ " title="<?php /*= __hepl("Aller vers la page 'Mentions légales'") */?>"><?php /*= __hepl('Mentions légales') */?></a>
+
+-->
+
+
+                <?php foreach (pll_the_languages(['raw' => true]) as $lang): ?>
+                    <!--On affiche uniquement la langue qui n'est PAS la langue actuelle-->
+                    <?php if ($lang['current_lang']): ?>
+                        <a href="<?= $lang['slug'] === 'de'? $lang['url'].'impressum' : $lang['url'].'mentions-legales/';
+                        ?>"
+                           lang="<?= $lang['locale'] ?>"
+                           hreflang="<?= $lang['locale'] ?>"
+                           class=""
+                           title="<?= __hepl("Aller vers la page 'Mentions légales'") ?>">
+                            <?= __hepl('Mentions légales'); ?>
+                        </a>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+
+
+
             </p>
         </div>
 </footer>

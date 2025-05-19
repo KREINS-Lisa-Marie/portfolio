@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-05-17 11:45+0200\n"
-"PO-Revision-Date: 2025-05-18 11:34+0200\n"
+"POT-Creation-Date: 2025-05-18 21:18+0200\n"
+"PO-Revision-Date: 2025-05-18 22:13+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -13,6 +13,22 @@ msgstr ""
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;__hepl\n"
 "X-Poedit-SearchPath-0: .\n"
+
+#: 404.php:5
+msgid "Page non trouvée"
+msgstr "Seite nicht gefunden"
+
+#: 404.php:6
+msgid "Désolé, la page que vous recherchez n’existe pas ou a été déplacée."
+msgstr "Die von Ihnen gesuchte Seite existiert nicht oder wurde verschoben."
+
+#: 404.php:8
+msgid "Retour à la "
+msgstr "Zurück zur "
+
+#: 404.php:10
+msgid "page d’accueil."
+msgstr "Startseite"
 
 #: footer.php:6
 msgid "Navigation"
@@ -35,8 +51,8 @@ msgid "Aller voir la page Facebook"
 msgstr "Zur Facebook Seite gehen"
 
 #: footer.php:44
-msgid "Aller voir la page Linkedin"
-msgstr "Zur Linkedin Seite gehen"
+msgid "Aller voir la page LinkedIn"
+msgstr "Zur LinkedIn Seite gehen"
 
 #: footer.php:50
 msgid "Aller vers la page 'Contact'"
@@ -47,14 +63,14 @@ msgid "Contactez-moi"
 msgstr "Kontaktieren Sie mich"
 
 #: footer.php:63
-msgid "Tous droits réservés. Crée par "
+msgid "Tous droits réservés. Créé par "
 msgstr "Alle Rechte vorbehalten. Erstellt von "
 
-#: footer.php:66
+#: footer.php:79
 msgid "Aller vers la page 'Mentions légales'"
 msgstr "Zur Seite „Impressumt“"
 
-#: footer.php:66
+#: footer.php:80 privacy-policy.php:5
 msgid "Mentions légales"
 msgstr "Impressum"
 
@@ -94,17 +110,49 @@ msgstr "Alle Projekte ansehen"
 msgid "Navigation principale"
 msgstr "Hauptmenu"
 
-#: header.php:47
+#: header.php:52
+msgid "Aller vers la page d’accueil"
+msgstr "Zur Startseite"
+
+#: header.php:62
 msgid "Aller au contenu principal"
 msgstr "Zum Hauptinhalt gehen"
 
-#: header.php:60
+#: header.php:75
 msgid "Aller vers la page "
-msgstr "Zur Seite "
+msgstr "Zur Seite"
 
 #: index.php:14
 msgid "La page n’existe pas."
 msgstr "Die Seite existiert nicht."
+
+#: privacy-policy.php:8
+msgid "Dernière mise à jour le "
+msgstr "Zuletzt aktualisiert am "
+
+#: privacy-policy.php:14
+msgid "Informations générales"
+msgstr "Allgemeine Informationen"
+
+#: privacy-policy.php:21
+msgid "Hosting"
+msgstr "Hosting"
+
+#: privacy-policy.php:24
+msgid "Aller voir la page d’Infomaniak"
+msgstr "Zur Seite von Infomaniak"
+
+#: privacy-policy.php:31
+msgid "Propriété intellectuelle"
+msgstr "Geistiges Eigentum"
+
+#: privacy-policy.php:38
+msgid "Liens externes"
+msgstr "Externe Links"
+
+#: privacy-policy.php:45
+msgid "Données personnelles"
+msgstr "Persönliche Daten"
 
 #: single-project.php:16
 msgid "Détails du projet"
@@ -119,10 +167,18 @@ msgid "Étapes"
 msgstr "Etappen"
 
 #: single-project.php:33
-msgid "Les difficultés rencontrés"
-msgstr "Eventuelle Schwierigkeiten"
+msgid "Les difficultés rencontrées"
+msgstr "Aufgetretene Schwierigkeiten"
 
-#: single-project.php:40
+#: single-project.php:42
+msgid "Aller sur la page du projet"
+msgstr "Zur Seite des Projektes gehen"
+
+#: single-project.php:42
+msgid "Vers la page du projet"
+msgstr "Zur Seite des Projektes gehen"
+
+#: single-project.php:54
 msgid "Galerie du projet"
 msgstr "Gallerie des Projektes"
 
@@ -146,6 +202,10 @@ msgstr "Zur Seite der Programmiersprache gehen"
 #: template-about.php:56
 msgid "image du langage HTML"
 msgstr "Bild der Programmiersprache HTML"
+
+#: template-about.php:67
+msgid "image du langage CSS"
+msgstr "Bild der Programmiersprache CSS"
 
 #: template-about.php:77
 msgid "image du langage de programmation JavaScript"
@@ -184,7 +244,7 @@ msgid "par exemple: Briol"
 msgstr "Zum Beispiel: Briol"
 
 #: template-contact.php:53
-msgid "Adresse mail"
+msgid "Adresse e-mail"
 msgstr "E-Mail Adresse"
 
 #: template-contact.php:54
