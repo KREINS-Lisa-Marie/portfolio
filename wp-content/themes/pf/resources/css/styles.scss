@@ -4,6 +4,7 @@
 @use 'settings/colors';
 @use 'settings/fonts';
 
+@use 'content/privacy';
 @use 'content/single-project';
 @use 'content/about';
 @use 'content/contact';
@@ -13,6 +14,7 @@
 @use 'content/stage';
 @use 'content/searchbar';
 @use 'content/project-cards';
+
 
 @use 'general/media_queries';
 @use 'general/footer';
