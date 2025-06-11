@@ -1,6 +1,6 @@
 {
   "wp-content/themes/pf/resources/css/styles.scss": {
-    "file": "assets/css-BNPhTm3W.css",
+    "file": "assets/css-mBHnRzQY.css",
     "src": "wp-content/themes/pf/resources/css/styles.scss",
     "isEntry": true
   },
@@ -16,9 +16,17 @@
     "file": "assets/Gotham-Medium-C8UMNMeg.otf",
     "src": "wp-content/themes/pf/resources/fonts/Gotham-Medium.otf"
   },
-  "wp-content/themes/pf/resources/img/background-rose.webp": {
-    "file": "assets/background-rose-CSPzHByT.webp",
-    "src": "wp-content/themes/pf/resources/img/background-rose.webp"
+  "wp-content/themes/pf/resources/img/background-grand.webp": {
+    "file": "assets/background-grand-DrAkLgU3.webp",
+    "src": "wp-content/themes/pf/resources/img/background-grand.webp"
+  },
+  "wp-content/themes/pf/resources/img/background-medium.webp": {
+    "file": "assets/background-medium-4lY3Zw3-.webp",
+    "src": "wp-content/themes/pf/resources/img/background-medium.webp"
+  },
+  "wp-content/themes/pf/resources/img/background-petit.webp": {
+    "file": "assets/background-petit-Dp3tdLYE.webp",
+    "src": "wp-content/themes/pf/resources/img/background-petit.webp"
   },
   "wp-content/themes/pf/resources/js/main.js": {
     "file": "assets/js-Bzsld0tX.js",
