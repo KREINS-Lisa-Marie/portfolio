@@ -6,10 +6,10 @@
 
 <?php get_header(); ?>
 
-<h2 class="page__title"><?= get_the_title(); ?></h2>
+<h2 class="page__title" aria-level="2" role="heading"><?= get_the_title(); ?></h2>
 
 <section class="my_projects">
-    <h2 class="sro"><?= __hepl('Liste de mes projets:') ?></h2>
+    <h3 class="sro" aria-level="3" role="heading"><?= __hepl('Liste de mes projets:') ?></h3>
 
         <div class="projects all_project_list">
 
@@ -42,9 +42,9 @@
 
                     <!--        A REVOIR STRUCTURE !!!             -->
                     <div class="project__card white_card">
-                            <h3 class="project__title">
+                            <h4 class="project__title" aria-level="4">
                                 <?= get_the_title(); ?>
-                            </h3>
+                            </h4>
                         <figure class="project__fig">
                             <?= get_the_post_thumbnail(size: 'medium', attr: ['class' => 'project__img']); ?>
                         </figure>

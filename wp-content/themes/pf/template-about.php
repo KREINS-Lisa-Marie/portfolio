@@ -4,21 +4,23 @@
 <!--La classe "sro" est une classe pour "screenreader-only"-->
 
 <?php get_header(); ?>
+<h2 class="sro" aria-level="2">À propos</h2>
 
 <section class="about-me-container">
     <div class="text_info_about_me" itemprop="description">
-        <h2>
+        <h3 aria-level="3" role="heading">
             <?= __hepl('Qui suis-je?') ?>
-            </h2>
+            </h3>
         <?= $description = get_field('description'); ?>
     </div>
 
     <div class="about_description_image">
         <?php
         $description_image = get_field('description_image');
-        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($description_image) {
-            echo wp_get_attachment_image($description_image, $size);
+            //echo wp_get_attachment_image($description_image, $size);
+            echo responsive_image($description_image, ['classes' => 'attachment-full size-full']) ;
         }
         ?>
     </div>
@@ -28,7 +30,7 @@
 
 <section class="career-container">
     <div class="text_info_about_life">
-    <h2><?= __hepl('Mon parcours') ?></h2>
+    <h3 aria-level="3" role="heading"><?= __hepl('Mon parcours') ?></h3>
 
     <?= $life_path = get_field('life_path');?>
 </div>
@@ -36,9 +38,10 @@
     <div class="about_life_path_image">
         <?php
         $life_path_image = get_field('life_path_image');
-        $size = 'full'; // (thumbnail, medium, large, full or custom size)
+        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($life_path_image) {
-            echo wp_get_attachment_image($life_path_image, $size);
+            //echo wp_get_attachment_image($life_path_image, $size);
+            echo responsive_image($life_path_image, ['classes' => 'attachment-full size-full']) ;
         }
         ?>
     </div>
@@ -46,9 +49,9 @@
 
 
 <section class="languages-container">
-    <h2 class="languages-title">
+    <h3 class="languages-title" aria-level="3" role="heading">
         <?= __hepl('Mes langages') ?>
-    </h2>
+    </h3>
     <ul class="languages-list" itemscope itemtype="https://schema.org/Person">
         <li class="languages-element">
             <div class="language_image_container">
