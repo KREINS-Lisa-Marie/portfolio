@@ -1,13 +1,13 @@
 </main>
-<footer>
+<footer role="contentinfo">
     <div class="footer_links_container">
         <div class="related_links_container">
-            <nav class="nav__footer">
-                <h2 class="nav_footer_title"><?= __hepl('Navigation') ?><span class="sro"><?= __hepl('de bas de page') ?></span></h2>
+            <nav class="nav__footer" id="footer-nav" aria-label="Footer">
+                <h2 class="nav_footer_title" aria-level="2" role="heading"><?= __hepl('Navigation') ?><span class="sro"><?= __hepl('de bas de page') ?></span></h2>
                 <ul class="nav__container__footer">
                     <?php foreach (dw_get_navigation_links('footer') as $link): ?>
                         <li class="nav__item__footer">
-                            <a href="<?= $link->href; ?>" class="nav__link_footer"><?= $link->label; ?></a>
+                            <a href="<?= $link->href; ?>" class="nav__link_footer" title="<?= __hepl('Aller vers la page ') ?> <?= $link->label; ?>"><?= $link->label; ?></a>
                         </li>
                     <?php endforeach; ?>
 
@@ -20,7 +20,7 @@
                                    lang="<?= $lang['locale'] ?>"
                                    hreflang="<?= $lang['locale'] ?>"
                                    class="nav__link_footer footer_language"
-                                   title="Changer la langue en <?= $lang['name'] ?>">
+                                   title="<?= __hepl('Changer la langue en') ?> <?= $lang['name'] ?>">
                                     <?= $lang['slug'] ?><!-- Affiche le code de langue (ex: 'en', 'fr') -->
                                 </a>
                             </li>
@@ -30,7 +30,7 @@
             </nav>
 
             <div class="socials_container">
-                <h2 class="nav_footer_title">
+                <h2 class="nav_footer_title" aria-level="2" role="heading">
                     <?= __hepl('Réseaux sociaux') ?>
                 </h2>
                 <ul class="socials_list">

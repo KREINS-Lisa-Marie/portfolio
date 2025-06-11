@@ -6,30 +6,30 @@ if (have_posts()): while (have_posts()): the_post(); ?>
 
 
     <div class="project__header">
-        <h2 class="page__title"><?= get_the_title(); ?></h2>
+        <h2 class="page__title" aria-level="2" role="heading"><?= get_the_title(); ?></h2>
         <!-- <?php /*if ($project_subline = get_field('project_subline'):*/ ?>
         <h3 class="project__subline"><?php /*= $project_subline; */ ?></h3>
     --><?php /*endif;*/ ?>
-        <h3 class="project__subline"><?= $project_subline = get_field('project_subline'); ?></h3>
+        <p class="project__subline" ><?= $project_subline = get_field('project_subline'); ?></p>
     </div>
     <div class="project__proporties">
-        <h3 class="sro"><?= __hepl('Détails du projet') ?></h3>
+        <h3 class="sro" aria-level="3"><?= __hepl('Détails du projet') ?></h3>
         <div class="project__goal">
-            <h4 class="project__proporties__title">
+            <h4 class="project__proporties__title" aria-level="4">
                 <?= __hepl('Objectif du projet') ?>
             </h4>
             <?= $goal = get_field('goal'); ?>
         </div>
 
         <div class="project__steps">
-            <h4 class="project__proporties__title">
+            <h4 class="project__proporties__title" aria-level="4">
                 <?= __hepl('Étapes') ?>
             </h4>
             <?= $steps = get_field('steps'); ?>
         </div>
 
         <div class="project__problems">
-            <h4 class="project__proporties__title">
+            <h4 class="project__proporties__title" aria-level="4">
                 <?= __hepl('Les difficultés rencontrées') ?>
             </h4>
             <?= $problems = get_field('problems'); ?>
@@ -50,7 +50,7 @@ if (have_posts()): while (have_posts()): the_post(); ?>
         </div>
     </div>
     <div class="project-gallery">
-        <h3 class="sro">
+        <h3 class="sro" aria-level="3">
             <?= __hepl('Galerie du projet') ?>
         </h3>
         <div class="project_images_container">

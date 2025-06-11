@@ -3,7 +3,7 @@
 <?php /* Template Name: Page "Contact" */ ?>
 
 <?php get_header(); ?>
-    <h2 class="page__title" >
+    <h2 class="page__title" aria-level="2" role="heading">
         <?= __hepl('Contactez-moi') ?>
     </h2>
 <?php
@@ -12,7 +12,7 @@
 if(have_posts()): while(have_posts()): the_post(); ?>
 
     <section class="contact">
-        <h3 class="form_title">
+        <h3 class="form_title" aria-level="3" role="heading">
             <?= __hepl('Formulaire de contact') ?>
         </h3>
 
