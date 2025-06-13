@@ -2,8 +2,8 @@
 
 Bienvenue à mon projet Portfolio !
 
-- Lien vers le projet : 
-- Lien vers le fichier Figma : https://www.figma.com/design/vZwsVs0avugUzcbFKgG8Of/Portfolio?node-id=42-204&t=prbVs74CUUHK6quo-1
+- Lien vers le projet : https://lisa-marie-kreins.com/
+- Lien vers le fichier Figma : https://www.figma.com/design/vZwsVs0avugUzcbFKgG8Of/Portfolio?node-id=0-1&t=feK6jG1frD6rPYVV-1
 
 
 ## Description du projet
@@ -23,7 +23,7 @@ Ceci est mon projet pour le cours de Design Web. Il s'agit de créer un portfoli
 
 ## Contact
 
-Pour des questions ou des demandes, je reste disponible par: 
+Pour des questions, je reste disponible par: 
 
 - **E-Mail:** [lisa-marie.kreins@student.hepl.be](mailto:lisa-marie.kreins@student.hepl.be)
 - **Facebook:** [Facebook-Profil](https://www.facebook.com/lisamarie.kreins.5)
