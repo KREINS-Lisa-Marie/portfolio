@@ -1,6 +1,3 @@
-<!--        A REVOIR FLECHE !!!             -->
-
-
 <?php get_header(); ?>
 
     <h2 class="main_title" aria-level="2" role="heading">
@@ -29,29 +26,11 @@
     <div class="discover_image">
         <?php
         $discover_image = get_field('decoration_image');
-        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($discover_image) {
-            /* echo wp_get_attachment_image($discover_image, $size);*/
 
             echo responsive_image($discover_image, ['classes' => 'decoration__image']) ;
-            //responsive_image($discover_image, ['classes' => 'decoration__image']);
-
-
         }
         ?></div>
-<!--
-    <div class="discover_image">
-        <?php
-/*        $image = get_field('decoration_image');
-        $size = 'section_image'; // (thumbnail, medium, large, full or custom size)
-        if ($image):*/?>
-            <figure>
-                <?php /*= wp_get_attachment_image($image, $size);;*/?>
-                <?php /*= responsive_image(get_field('decoration_image'), ['lazy' => 'lazy', 'classes' => 'stage__image']) */?>
-            </figure>
-        <?php /*endif;*/?>
-
--->
 </div>
 
 

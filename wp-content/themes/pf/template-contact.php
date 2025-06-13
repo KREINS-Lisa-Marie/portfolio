@@ -1,15 +1,9 @@
-<!--    OKAY BRAUCHT THE loop?-->
-
 <?php /* Template Name: Page "Contact" */ ?>
 
 <?php get_header(); ?>
     <h2 class="page__title" aria-level="2" role="heading">
         <?= __hepl('Contactez-moi') ?>
     </h2>
-<?php
-// On ouvre "la boucle" (The Loop), la structure de contrôle
-// de contenu propre à Wordpress:
-if(have_posts()): while(have_posts()): the_post(); ?>
 
     <section class="contact">
         <h3 class="form_title" aria-level="3" role="heading">
@@ -88,11 +82,6 @@ Amandine Briol') ?>
             </form>
         <?php endif; ?>
     </section>
-<?php
-    // On ferme "la boucle" (The Loop):
-endwhile; else: ?>
-    <p><?= __hepl('La page est vide') ?>.</p>
-<?php endif; ?>
 <?php get_footer(); ?>
 
 

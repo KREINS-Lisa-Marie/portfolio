@@ -17,9 +17,7 @@
     <div class="about_description_image">
         <?php
         $description_image = get_field('description_image');
-        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($description_image) {
-            //echo wp_get_attachment_image($description_image, $size);
             echo responsive_image($description_image, ['classes' => 'attachment-full size-full']) ;
         }
         ?>
@@ -38,9 +36,7 @@
     <div class="about_life_path_image">
         <?php
         $life_path_image = get_field('life_path_image');
-        //$size = 'full'; // (thumbnail, medium, large, full or custom size)
         if ($life_path_image) {
-            //echo wp_get_attachment_image($life_path_image, $size);
             echo responsive_image($life_path_image, ['classes' => 'attachment-full size-full']) ;
         }
         ?>

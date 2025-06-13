@@ -1,7 +1,6 @@
 <?php /* Template Name: Page "Projets" */ ?>
 <!--commentaire pour dire à WP que c'est un fichier template -->
 
-
 <!--La classe "sro" est une classe pour "screenreader-only"-->
 
 <?php get_header(); ?>
@@ -39,8 +38,6 @@
                     <a href="<?= get_the_permalink(); ?>" class="project__link" title="<?= __hepl('Aller voir la page du projet') ?>">
                         <span class="sro"><?= __hepl('Découvrir le projet') ?> <?= get_the_title(); ?></span>
                     </a>
-
-                    <!--        A REVOIR STRUCTURE !!!             -->
                     <div class="project__card white_card">
                             <h4 class="project__title" aria-level="4">
                                 <?= get_the_title(); ?>
