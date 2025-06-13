@@ -1,84 +1,75 @@
-@media (max-width: 1199px) {
-  .my_projects {
-    margin-bottom: 56px;
-  }
-}
+/*    PARAMETRES GENERAUX   */
 
 .project__card {
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 32px;
+  margin-bottom: 2.285714285714286em;  //32px
   box-shadow: 0 4px 18px rgb(80 62 101);
-
 }
-
 .my_project_white {
   background-color: var(--white);
 }
 
+
+/*    MOBILE & TABLET   */
+
 @media (max-width: 1199px) {
-  .project__header {
-    max-width: calc(100% - 48px);
-    padding-left: 24px;
-    padding-right: 24px;
+  .my_projects {
+    margin-bottom: 4em;    //56px
   }
 }
 
+
+/*    DESKTOP   */
+
 @media (min-width: 1200px) {
   .page__title {
-    margin-top: 256px;
-    margin-bottom: 230px;
-    font-size: 96px;
+    margin-top: 2.666666666666667em;  //256px
+    margin-bottom: 2.395833333333333em;  //230px
+    font-size: 6.857142857142857em;  //96px
   }
   .my_projects {
-    margin-bottom: 180px;
+    margin-bottom: 12.85714285714286em;  //180px
   }
   .project__proporties {
     margin-right: auto;
     margin-left: auto;
     max-width: 1087px;
   }
-
   .project__proporties__title {
-    font-size: 36px;
+    font-size: 2.571428571428571em;  //36px
     max-width: 319px;
   }
-
   .project__goal, .project__steps, .project__problems {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-content: center;
-    margin-bottom: 160px;
-
+    margin-bottom: 11.42857142857143em;  //160px
   }
   .project__goal{
-    margin-top: 296px;
+    margin-top: 21.14285714285714em;  //296px
   }
-
   .project__proporties__title ~ p {
     max-width: 672px;
-    font-size: 16px;
+    font-size: 1.142857142857143em;  //16px
     line-height: 170%;
   }
   .project__header>.page__title{
-    margin-bottom: 40px;
+    margin-bottom: 0.416666666666667em; //40px
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
   .project__subline{
-    font-size: 74px;
+    font-size: 5.285714285714286em;  //74px
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
   }
   .project-gallery{
-/*    padding-top: 180px;
-    padding-bottom: 180px;*/
-    padding: 180px 2%;
+    padding: 12.85714285714286em 2%;    //180px
   }
-
   .project-gallery img{
     width: 524px;
     height: 360px;
@@ -89,22 +80,15 @@
     justify-content: center;
     display: flex;
     flex-direction: row;
-    gap: 32px;
+    gap: 2.285714285714286em;  //32px
     flex-wrap: wrap;
     max-width: 1642px ;
   }
   .link__to__extern__project__site{
-    font-size: 35px;
+    font-size: 2.5em;  //35px
     color:var(--dark-violet);
     font-family: "Gotham", sans-serif;
-    margin-bottom: 160px;
+    margin-bottom: 4.571428571428571em;  //160px
     margin-left:0;
   }
 }
-
-/*  .project-gallery {
-
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-  }*/

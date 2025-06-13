@@ -1,3 +1,5 @@
+/*    PARAMETRES GENERAUX   */
+
 .privacy_title{
   font-weight:600;
   color:var(--dark-violet);
@@ -7,13 +9,10 @@
   text-align:center;
 }
 .identity__title, .hosting__title, .intellectual_property__title, .privacy_extern_links__title, .personal_data__title {
-  padding-left: 24px;
-  padding-right: 24px;
   font-weight: 600;
   max-width: 1200px;
   color: var(--dark-violet);
-  margin: 40px auto 16px;
-
+  margin: 1.6666666667em auto 0.6666666667em;
 }
 .privacy_extern_links, .personal_data, .intellectual_property, .hosting, .identity {
   max-width: 50em;
@@ -29,7 +28,7 @@
     margin-left: 0;
   }
   .hosting_text{
-    padding:0 24px;
+    padding:0 1.714285714285714em;  //24px
   }
   .hosting a{
     font-weight: 600;
@@ -43,23 +42,25 @@
 
   @media (max-width: 1199px){
   .privacy_title{
-    margin-top:130px;
-    font-size:40px;
-    margin-bottom: 24px;
+    margin-top:3.25em;
+    font-size:2.8571428571em;
+    margin-bottom: 0.6em;
   }
   .update{
-    font-size: 24px;
+    font-size: 1.7142857143em;
   }
   .identity__title, .hosting__title, .intellectual_property__title, .privacy_extern_links__title, .personal_data__title{
-    font-size: 24px;
+    font-size: 1.7142857143em;
+    padding-left: 1em;  //24px
+    padding-right: 1em;  //24px
   }
   .privacy_extern_links, .personal_data, .intellectual_property, .hosting, .identity{
     p, a{
-      font-size: 14px;
+      font-size: 1em;
     }
   }
   .personal_data{
-    margin-bottom: 56px;
+    margin-bottom: 4em;
   }
 }
 
@@ -68,22 +69,24 @@
 /*    DESKTOP    */
 @media (min-width: 1200px){
   .privacy_title{
-    margin-top:256px;
-    font-size:96px;
-    margin-bottom: 24px;
+    margin-top:2.6666666667em;
+    font-size:6.8571428571em;
+    margin-bottom: 0.25em;
   }
   .update{
-    font-size: 24px;
+    font-size: 1.7142857143em;
   }
   .identity__title, .hosting__title, .intellectual_property__title, .privacy_extern_links__title, .personal_data__title{
-    font-size: 32px;
+    font-size: 2.2857142857em;
+    padding-left: 0.75em; //24px
+    padding-right: 0.75em;  //24px
   }
   .privacy_extern_links, .personal_data, .intellectual_property, .hosting, .identity{
     p, a{
-      font-size: 16px;
+      font-size: 1.1428571429em;
     }
   }
   .personal_data{
-    margin-bottom: 160px;
+    margin-bottom: 11.4285714286em;
   }
 }
