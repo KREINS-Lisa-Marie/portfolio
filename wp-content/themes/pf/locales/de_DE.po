@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2025-05-18 21:18+0200\n"
-"PO-Revision-Date: 2025-05-18 22:13+0200\n"
+"POT-Creation-Date: 2025-06-13 09:14+0200\n"
+"PO-Revision-Date: 2025-06-13 09:15+0200\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: de_DE\n"
@@ -14,21 +14,25 @@ msgstr ""
 "X-Poedit-KeywordsList: __;__hepl\n"
 "X-Poedit-SearchPath-0: .\n"
 
-#: 404.php:5
+#: 404.php:3
 msgid "Page non trouvée"
 msgstr "Seite nicht gefunden"
 
-#: 404.php:6
+#: 404.php:4
 msgid "Désolé, la page que vous recherchez n’existe pas ou a été déplacée."
 msgstr "Die von Ihnen gesuchte Seite existiert nicht oder wurde verschoben."
 
-#: 404.php:8
+#: 404.php:6
 msgid "Retour à la "
 msgstr "Zurück zur "
 
-#: 404.php:10
+#: 404.php:7
+msgid "Retour à la page d’accueil"
+msgstr "Zur Startseite"
+
+#: 404.php:8
 msgid "page d’accueil."
-msgstr "Startseite"
+msgstr "Startseite."
 
 #: footer.php:6
 msgid "Navigation"
@@ -37,6 +41,14 @@ msgstr "Navigation"
 #: footer.php:6
 msgid "de bas de page"
 msgstr "am Seitenende"
+
+#: footer.php:10
+msgid "Aller vers la page"
+msgstr "Zur Seite"
+
+#: footer.php:23
+msgid "Changer la langue en"
+msgstr "Wechseln zur Sprache"
 
 #: footer.php:34
 msgid "Réseaux sociaux"
@@ -54,73 +66,113 @@ msgstr "Zur Facebook Seite gehen"
 msgid "Aller voir la page LinkedIn"
 msgstr "Zur LinkedIn Seite gehen"
 
-#: footer.php:50
+#: footer.php:58
 msgid "Aller vers la page 'Contact'"
 msgstr "Zur Seite „Kontakt“"
 
-#: footer.php:51 template-contact.php:7
+#: footer.php:59 template-contact.php:7
 msgid "Contactez-moi"
 msgstr "Kontaktieren Sie mich"
 
-#: footer.php:63
+#: footer.php:73
 msgid "Tous droits réservés. Créé par "
 msgstr "Alle Rechte vorbehalten. Erstellt von "
 
-#: footer.php:79
+#: footer.php:84
 msgid "Aller vers la page 'Mentions légales'"
 msgstr "Zur Seite „Impressumt“"
 
-#: footer.php:80 privacy-policy.php:5
+#: footer.php:85 privacy-policy.php:5
 msgid "Mentions légales"
 msgstr "Impressum"
 
-#: front-page.php:20
+#: forms/ContactForm.php:62
+msgid "Confirmation d‘envoi"
+msgstr "Sendebestätigung"
+
+#: forms/ContactForm.php:69
+msgid "Merci, "
+msgstr "Vielen Dank, "
+
+#: forms/ContactForm.php:69
+msgid "! Votre message a bien été envoyé."
+msgstr "! Ihre Nachricht wurde erfolgreich gesendet."
+
+#: forms/ContactForm.php:97
+msgid "Veuillez renseigner ce champ."
+msgstr "Bitte füllen Sie dieses Feld aus."
+
+#: forms/ContactForm.php:105
+msgid "Adresse invalide."
+msgstr "Ungültige E-Mail Adresse."
+
+#: forms/ContactForm.php:117
+msgid "Ce champ ne peut pas contenir le mot \"test\"."
+msgstr "Dieses Feld darf nicht das Wort „Test“ enthalten."
+
+#: forms/ContactForm.php:132
+msgid "Bonjour,"
+msgstr "Guten Tag,"
+
+#: forms/ContactForm.php:143
+msgid "Confirmation d‘envoie de votre message"
+msgstr "Versandbestätigung für Ihre Nachricht"
+
+#: forms/ContactForm.php:144
+msgid "Récapitulatif de votre message :"
+msgstr "Zusammenfassung Ihrer Nachricht :"
+
+#: front-page.php:17
 msgid "Aller vers la page 'A propos'"
 msgstr "Zur Seite „Über mich“ gehen"
 
-#: front-page.php:20
+#: front-page.php:17
 msgid "Me découvrir"
 msgstr "Mich kennenlernen"
 
-#: front-page.php:43
+#: front-page.php:40
 msgid "Mes projets récents"
 msgstr "Meine neuesten Projekte"
 
-#: front-page.php:60
+#: front-page.php:57
 msgid "Aller vers le projet"
 msgstr "Zum Projekt gehen"
 
-#: front-page.php:61
+#: front-page.php:58
 msgid "Découvrir le projet "
-msgstr "Das Projekt erkunden"
+msgstr "Das Projekt erkunden "
 
-#: front-page.php:77
+#: front-page.php:76
 msgid "Je n'ai pas de projets récents à montrer pour le moment..."
 msgstr "Ich habe im Moment keine aktuellen Projekte, die ich anzeigen kann…"
 
-#: front-page.php:82
+#: front-page.php:81
 msgid "Aller vers la page 'Projets'"
 msgstr "Zur Seite „Meine Projekte“ gehen"
 
-#: front-page.php:82
+#: front-page.php:81
 msgid "Voir tous les projets"
 msgstr "Alle Projekte ansehen"
 
-#: header.php:44
+#: header.php:40
 msgid "Navigation principale"
 msgstr "Hauptmenu"
 
-#: header.php:52
+#: header.php:48 header.php:49
 msgid "Aller vers la page d’accueil"
 msgstr "Zur Startseite"
 
-#: header.php:62
+#: header.php:55
 msgid "Aller au contenu principal"
 msgstr "Zum Hauptinhalt gehen"
 
-#: header.php:75
+#: header.php:68
 msgid "Aller vers la page "
 msgstr "Zur Seite"
+
+#: header.php:81
+msgid "Changer la langue en "
+msgstr "Wechseln zur Sprache "
 
 #: index.php:14
 msgid "La page n’existe pas."
@@ -130,59 +182,63 @@ msgstr "Die Seite existiert nicht."
 msgid "Dernière mise à jour le "
 msgstr "Zuletzt aktualisiert am "
 
-#: privacy-policy.php:14
+#: privacy-policy.php:18
 msgid "Informations générales"
 msgstr "Allgemeine Informationen"
 
-#: privacy-policy.php:21
+#: privacy-policy.php:25
 msgid "Hosting"
 msgstr "Hosting"
 
-#: privacy-policy.php:24
+#: privacy-policy.php:28
 msgid "Aller voir la page d’Infomaniak"
 msgstr "Zur Seite von Infomaniak"
 
-#: privacy-policy.php:31
+#: privacy-policy.php:35
 msgid "Propriété intellectuelle"
 msgstr "Geistiges Eigentum"
 
-#: privacy-policy.php:38
+#: privacy-policy.php:42
 msgid "Liens externes"
 msgstr "Externe Links"
 
-#: privacy-policy.php:45
+#: privacy-policy.php:49
 msgid "Données personnelles"
 msgstr "Persönliche Daten"
 
-#: single-project.php:16
+#: single-project.php:13
 msgid "Détails du projet"
 msgstr "Details des Projektes"
 
-#: single-project.php:19
+#: single-project.php:16
 msgid "Objectif du projet"
 msgstr "Ziel des Projektes"
 
-#: single-project.php:26
+#: single-project.php:23
 msgid "Étapes"
 msgstr "Etappen"
 
-#: single-project.php:33
+#: single-project.php:30
 msgid "Les difficultés rencontrées"
 msgstr "Aufgetretene Schwierigkeiten"
 
-#: single-project.php:42
+#: single-project.php:38
 msgid "Aller sur la page du projet"
 msgstr "Zur Seite des Projektes gehen"
 
-#: single-project.php:42
+#: single-project.php:38
 msgid "Vers la page du projet"
 msgstr "Zur Seite des Projektes gehen"
 
-#: single-project.php:54
+#: single-project.php:50
 msgid "Galerie du projet"
 msgstr "Gallerie des Projektes"
 
-#: template-about.php:11
+#: single-project.php:66
+msgid "Ce projet n’existe pas."
+msgstr "Das Projekt existiert nicht."
+
+#: template-about.php:12
 msgid "Qui suis-je?"
 msgstr "Wer bin ich?"
 
@@ -190,36 +246,36 @@ msgstr "Wer bin ich?"
 msgid "Mon parcours"
 msgstr "Mein Werdegang"
 
-#: template-about.php:50
+#: template-about.php:49
 msgid "Mes langages"
 msgstr "Meine Programmiersprachen"
 
-#: template-about.php:55 template-about.php:65 template-about.php:75
-#: template-about.php:86 template-about.php:96 template-about.php:107
+#: template-about.php:54 template-about.php:64 template-about.php:74
+#: template-about.php:85 template-about.php:95 template-about.php:106
 msgid "Aller voir la page du langage"
 msgstr "Zur Seite der Programmiersprache gehen"
 
-#: template-about.php:56
+#: template-about.php:55
 msgid "image du langage HTML"
 msgstr "Bild der Programmiersprache HTML"
 
-#: template-about.php:67
+#: template-about.php:66
 msgid "image du langage CSS"
 msgstr "Bild der Programmiersprache CSS"
 
-#: template-about.php:77
+#: template-about.php:76
 msgid "image du langage de programmation JavaScript"
 msgstr "Bild der Programmiersprache JavaScript"
 
-#: template-about.php:88
+#: template-about.php:87
 msgid "image du langage de programmation TypeScript"
 msgstr "Bild der Programmiersprache TypeScript"
 
-#: template-about.php:98
+#: template-about.php:97
 msgid "image du langage de programmation PHP"
 msgstr "Bild der Programmiersprache PHP"
 
-#: template-about.php:109
+#: template-about.php:108
 msgid "image du langage de programmation MySQL"
 msgstr "Bild der Programmiersprache MySQL"
 
@@ -286,20 +342,26 @@ msgstr "Senden"
 
 #: template-contact.php:94
 msgid "La page est vide"
-msgstr "Die Seite ist leer."
+msgstr "Die Seite ist leer"
 
-#: template-projects.php:12
+#: template-projects.php:11
 msgid "Liste de mes projets:"
 msgstr "Liste meiner Projekte:"
 
-#: template-projects.php:39
+#: template-projects.php:38
 msgid "Aller voir la page du projet"
 msgstr "Zur Seite des Projektes gehen"
 
-#: template-projects.php:40
+#: template-projects.php:39
 msgid "Découvrir le projet"
 msgstr "Das Projekt erkunden"
 
-#: template-projects.php:57
+#: template-projects.php:56
 msgid "Je n’ai pas de projets récents à montrer pour le moment..."
 msgstr "Ich habe im Moment keine aktuellen Projekte, die ich anzeigen kann…"
+
+#~ msgid "Vous avez un nouveau message de "
+#~ msgstr "Sie haben eine neue Nachricht von:"
+
+#~ msgid "Adresse mail: "
+#~ msgstr "E-Mail Adresse"
