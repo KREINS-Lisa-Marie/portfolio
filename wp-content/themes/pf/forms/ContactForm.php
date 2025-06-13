@@ -59,14 +59,14 @@ class ContactForm
         // Envoyer une notification à l'utilisateur
         wp_mail(
             to: $data['email'],
-            subject: 'Confirmation d‘envoi',
+            subject: __hepl("Confirmation d‘envoi"),
             message: $this->generateReplyEmailContent($data),
         );
 
 
         // Retourner à la page précédente pour afficher un message de succès.
         // Mettre un message de succès en session pour pouvoir l'afficher sur la page suivante :
-        $_SESSION['contact_form_success'] = 'Merci, '.$data['firstname'].'! Votre message a bien été envoyé.';
+        $_SESSION['contact_form_success'] = __hepl("Merci, ").$data['firstname'].__hepl("! Votre message a bien été envoyé.");
         // Retourner à la page précédente pour afficher les erreurs de validation :
         wp_safe_redirect($_SERVER['HTTP_REFERER']);
         exit();
@@ -94,7 +94,7 @@ class ContactForm
         if($value || $value == 0) {
             return true;
         }
-        return 'Veuillez renseigner ce champ.';
+        return  __hepl("Veuillez renseigner ce champ.");
     }
 
     protected function check_email(string $field, mixed $value): bool|string
@@ -102,7 +102,7 @@ class ContactForm
         if(filter_var($value, FILTER_VALIDATE_EMAIL)) {
             return true;
         }
-        return 'Adresse invalide.';
+        return __hepl("Adresse invalide.");
     }
 
     protected function check_no_test(string $field, mixed $value): bool|string
@@ -114,7 +114,7 @@ class ContactForm
         if(strpos($value, 'test') === false) {
             return true;
         }
-        return 'Ce champ ne peut pas contenir le mot "test".';
+        return __hepl('Ce champ ne peut pas contenir le mot "test".');
     }
 
     protected function cleanData(array $data): array
@@ -129,8 +129,8 @@ class ContactForm
     //Message pour l'admin avec le contenu du message envoyé par un utilisateur
     protected function generateEmailContent(array $data): string
     {
-        return 'Bonjour,'.PHP_EOL
-            .'Vous avez un nouveau message de '.$data['firstname'].' '.$data['lastname'].':'.PHP_EOL
+        return __hepl("Bonjour,").PHP_EOL
+            .'Vous avez un nouveau message de '.$data['firstname'].' '.$data['lastname'].':'.PHP_EOL.PHP_EOL
             .$data['message'].PHP_EOL.PHP_EOL
             .'----'.PHP_EOL
             .'Adresse mail: '.$data['email'];
@@ -140,8 +140,8 @@ class ContactForm
     // Message de retour à l'utilisateur
     protected function generateReplyEmailContent(array $data): string
     {
-        return 'Confirmation d‘envoie de votre message'.PHP_EOL
-            .'Récapitulatif de votre message :'.PHP_EOL
+        return __hepl("Confirmation d‘envoie de votre message").PHP_EOL
+            .__hepl("Récapitulatif de votre message :").PHP_EOL.PHP_EOL
             .$data['message'];
     }
 

@@ -1,5 +1,3 @@
-<!--PAGE QUI EST BONNE FERTIG-->
-
 <?php get_header(); ?>
 <div class="not-found">
     <h2 class="not-found__title" aria-level="2"><?= __hepl('Page non trouvée') ?></h2>

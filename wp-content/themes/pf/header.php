@@ -1,5 +1,3 @@
-<!--        OKAY für mich       -->
-
 <!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -24,17 +22,11 @@
     <link rel="icon" type="image/png" sizes="96x96" href="/wp-content/themes/pf/flavicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/wp-content/themes/pf/flavicon/favicon-16x16.png">
 
-
-<!--    <link rel="manifest" href="/manifest.json">-->
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
-
-
-   <!-- <link rel="stylesheet" href="./resources/css/styles.scss">-->
     <link rel="stylesheet" type="text/css" href="<?= dw_asset('css'); ?>">
-    <script src="<?= dw_asset('js') ?>" defer></script>
     <title><?= get_the_title() ?> - Portfolio</title>
 </head>
 <body>
@@ -56,10 +48,6 @@
             <?php endif; ?>
         <?php endforeach; ?>
 
-
-<!--
-        <a href="http://portfolio.test/" title="Aller vers la page d'accueil"> <img src="/wp-content/themes/pf/resources/img/logo.svg" alt="Logo Lisa-Marie Kreins" width="30" height="24" class="logo_image"></a>
--->
         <a href="#content" class="sro skip" title="<?=__hepl('Aller au contenu principal') ?>" aria-label="<?=__hepl('Aller au contenu principal') ?>"><?= __hepl('Aller au contenu principal') ?></a>
 
         <input type="checkbox" id="burger_menu" name="burger_menu">
@@ -93,24 +81,7 @@
                     </li>
                 <?php endif; ?>
             <?php endforeach; ?>
-
-
-
-
-
-
-
-           <!-- <?php /*foreach (pll_the_languages(['raw' => true]) as $lang): */?>
-                <li class="languages__item<?php /*= $lang['current_lang'] ? ' languages__item--current' : '' */?>">
-                    <a href="<?php /*= $lang['url'] */?>" lang="<?php /*= $lang['locale'] */?>" hreflang="<?php /*= $lang['locale'] */?>"
-                       class="languages__link" title="<?php /*= __hepl('Changer la langue en') . $lang['name']*/?>"><?php /*= $lang['slug'] */?></a>
-                </li>
-            --><?php /*endforeach; */?>
         </ul>
-
-
-
-
     </nav>
 </header>
 

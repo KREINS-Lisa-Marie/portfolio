@@ -7,9 +7,6 @@ if (have_posts()): while (have_posts()): the_post(); ?>
 
     <div class="project__header">
         <h2 class="page__title" aria-level="2" role="heading"><?= get_the_title(); ?></h2>
-        <!-- <?php /*if ($project_subline = get_field('project_subline'):*/ ?>
-        <h3 class="project__subline"><?php /*= $project_subline; */ ?></h3>
-    --><?php /*endif;*/ ?>
         <p class="project__subline" ><?= $project_subline = get_field('project_subline'); ?></p>
     </div>
     <div class="project__proporties">
@@ -37,7 +34,6 @@ if (have_posts()): while (have_posts()): the_post(); ?>
 
         <div class="link__to__extern_project">
 
-
             <?php if (get_field('link_to_projectpage')):?>
                 <a href="<?= get_field('link_to_projectpage'); ?>" title="<?= __hepl('Aller sur la page du projet') ?>" class="link__to__extern__project__site link_discover_me"><?= __hepl("Vers la page du projet") ?>
                     <svg width="32" height="28" xmlns="http://www.w3.org/2000/svg" version="1.1" viewBox="0 0 32 28"
@@ -63,41 +59,10 @@ if (have_posts()): while (have_posts()): the_post(); ?>
         </div>
     </div>
 
-    <!--    <div class="travel">
-        <header class="travel__header">
-            <div class="travel__head">
-                <h2 class="travel__title"><?php /*= get_the_title(); */ ?></h2>
-                <p class="travel__excerpt"><?php /*= get_the_excerpt(); */ ?></p>
-                <div class="travel__rating" data-score="<?php /*= $rating = get_field('rating'); */ ?>">
-                    <p class="sro">Ce voyage obtient l'appréciation de <?php /*= $rating; */ ?> étoiles sur 5</p>
-                </div>
-
-            </div>
-        </header>
-
-        <div class="travel__container">
-            <aside class="travel__ingredients">
-                <div>
-                    <h3>Points-clés</h3>
-                    <div class="wysiwyg">
-                        <?php /*= get_field('keypoints'); */ ?>
-                    </div>
-                </div>
-            </aside>
-
-            <section class="travel__steps">
-                <h3>Récit de voyage</h3>
-                <div class="wysiwyg">
-                    <?php /*= get_field('story'); */ ?>
-                </div>
-            </section>
-        </div>
-    </div>-->
-
 <?php
     // On ferme "la boucle" (The Loop):
 endwhile;
 else: ?>
-    <p>Ce projet n'existe pas.</p>
+    <p><?= __hepl('Ce projet n’existe pas.') ?></p>
 <?php endif; ?>
 <?php get_footer(); ?>
